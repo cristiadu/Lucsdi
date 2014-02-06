@@ -1,0 +1,20 @@
+.initial-page{
+	background-image:url("../img/bg-init.jpeg");
+	height: 100%;
+	position: fixed;
+}
+.img-ucsd{
+	width: 120px;
+	height: 120px;
+}
+
+.div-space-initial{
+	height: 10%;
+}
+.div-line-initial{
+	height: 10%;
+	background-color: blue;
+	margin-left: -2.5%;
+	margin-right: -2.5%;
+}
+
