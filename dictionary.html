@@ -4,24 +4,44 @@
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+				html, body {
+				height: 100%;
+				}
+
+			
+			</style>
 	</head>
 			
 	<body>
-		<div class="container">
-			<div class="row">
+		<div class="container height-nav">
+			<div class="row height-nav">
 				<div class="col-xs-1 col-md-3"></div>
-				<div class="initial-page col-xs-12 col-md-5">
-					<div class="row margin-initial">
-						<div class="col-md-12 col-xs-12" align="center">
-							<img class="img-ucsd" src="img/ucsd-logo.gif"></img>
+				<div class="initial-page col-xs-12 col-md-5 height-nav">
+					<div class="row">
+						<form>
+							<div class="col-md-12 col-xs-12">
+								<div class="row margin-dict">
+									<div class="col-md-8 col-xs-8">
+										<input type="search" class="form-control" placeholder="Search for words here..."/>
+									</div>
+									<div class="col-md-4 col-xs-4">
+										<button type="button" class="btn btn-primary col-md-12 col-xs-12" id="search-dict">Search</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row height-results-dict">
+						<div class="col-md-12 col-xs-12" id="content-dict">
+							
+
+
 						</div>
 					</div>
-					<div class="row margin-initial2">
-						<div class="col-md-12 col-xs-12 div-line-initial"><h2 align="center" class="text-initial">Lost in Translation</h2></div>
-					</div>
 					<div class="row">
-						<div class="col-md-12 col-xs-12 div-initial-enter">
-							<button type="button" id="btn-enter" class="btn btn-primary col-md-12 col-xs-12 btn-initial-enter"><h3>Enter</h3></button>
+						<div class="col-md-12 col-xs-12">
+							<h1 align="center" class="text-initial">Dictionary</h1>
 						</div>
 					</div>
 				</div>

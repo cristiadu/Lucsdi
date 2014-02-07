@@ -59,3 +59,16 @@
 .margin-nav{
 	margin-bottom: 20%;
 }
+
+.margin-dict{
+	margin-top: 15%;
+	margin-bottom: 5%;
+}
+
+.height-results-dict{
+	height:60%;
+}
+
+#content-dict{
+	height:auto;
+}
