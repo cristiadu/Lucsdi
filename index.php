@@ -28,6 +28,9 @@
 				<div class="col-xs-1 col-md-3"></div>
 			</div>
 		</div>
-		<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+		<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>
