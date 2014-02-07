@@ -1,20 +1,36 @@
 .initial-page{
 	background-image:url("../img/bg-init.jpeg");
-	height: 100%;
-	position: absolute;
 }
 .img-ucsd{
 	width: 120px;
 	height: 120px;
 }
 
-.div-space-initial{
-	height: 10%;
-}
 .div-line-initial{
-	height: 10%;
 	background-color: blue;
-	margin-left: -2.5%;
-	margin-right: -2.5%;
 }
 
+.margin-initial{
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.margin-initial2{
+	margin-bottom: 45%;
+
+}
+
+.text-initial{
+	color: white;
+}
+
+.div-initial-enter{
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 15%;
+}
+
+.btn-initial-enter{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
