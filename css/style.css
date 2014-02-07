@@ -36,8 +36,8 @@
 }
 
 .margin-menu{
-	margin-top: 29%;
-	margin-bottom: 29%
+	margin-top: 28.9%;
+	margin-bottom: 28.9%
 }
 
 .btn-menu{
@@ -46,4 +46,16 @@
 
 .btn-menu button{
 	width:100%;
+}
+
+.height-nav{
+	height: 100%;
+}
+
+.percents-nav{
+	height: 70%;
+}
+
+.margin-nav{
+	margin-bottom: 20%;
 }
