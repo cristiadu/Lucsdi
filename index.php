@@ -21,7 +21,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-xs-12 div-initial-enter">
-							<button type="button" id="btn-enter" class="btn btn-primary col-md-12 col-xs-12 btn-initial-enter">Enter</button>
+							<button type="button" id="btn-enter" class="btn btn-primary col-md-12 col-xs-12 btn-initial-enter"><h3>Enter</h3></button>
 						</div>
 					</div>
 				</div>
