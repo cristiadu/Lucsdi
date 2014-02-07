@@ -6,7 +6,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 			
-	<body onload="setTimeout(function() {window.scrollTo(0, 1)}, 100)">
+	<body>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-1 col-md-3"></div>
