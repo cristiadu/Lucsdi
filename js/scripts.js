@@ -27,6 +27,7 @@ $(document).ready(function(){
 
 	$("#search-dict").click(function(){
 		event.preventDefault();
+
 		$("#content-dict").html("<h2>Something</h2>"
 							+"<small>some-thing  [suhm-thing]</small>"
 							+"<p><strong>pronoun</strong></p>"
@@ -37,6 +38,7 @@ $(document).ready(function(){
 							+"<p><strong>adverb</strong></p>"
 							+"<p>4.in some degree; to some extent; somewhat.</p>"
 							+"<p>5.Informal. to a high or extreme degree; quite: He took on something fierce about my tardiness.</p>");
+		$("#content-dict").removeClass("content-dict");
 	});
 
 	
