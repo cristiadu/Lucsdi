@@ -34,3 +34,16 @@
 	padding-top: 3%;
 	padding-bottom: 3%;
 }
+
+.margin-menu{
+	margin-top: 30%;
+	margin-bottom: 30%
+}
+
+.btn-menu{
+	margin-bottom: 3%;
+}
+
+.btn-menu button{
+	width:100%;
+}
