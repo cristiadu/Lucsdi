@@ -1,7 +1,7 @@
 .initial-page{
 	background-image:url("../img/bg-init.jpeg");
 	height: 100%;
-	position: fixed;
+	position: absolute;
 }
 .img-ucsd{
 	width: 120px;

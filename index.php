@@ -9,16 +9,11 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-1 col-md-5"></div>
-				<div class="initial-page col-xs-12 col-md-5">
-					<div class="div-space-initial"></div>
+				<div class="initial-page col-xs-12 col-md-6">
 					<div align="center">
 						<img class="img-ucsd" src="img/ucsd-logo.gif"></img>
 					</div>
-					<div class="div-space-initial"></div>
-					<div class="div-line-initial"></div>
 				</div>
-				<div class="col-xs-1 col-md-3"></div>
 			</div>
 		</div>
 		<script src="js/bootstrap.min.js"></script>
