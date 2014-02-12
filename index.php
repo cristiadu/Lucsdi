@@ -7,15 +7,13 @@
 	</head>
 			
 	<body>
-		<div id="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-1 col-md-3"></div>
-					<div class="initial-page col-xs-12 col-md-5">
+		<div class="container height-hundred">
+			<div class="row height-hundred">
+				<div class="col-xs-1 col-md-3 height-hundred"></div>
+				<div id="wrap" class="initial-page col-xs-12 col-md-5">
 
-					</div>
-					<div class="col-xs-1 col-md-3"></div>
 				</div>
+				<div class="col-xs-1 col-md-3 height-hundred"></div>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
