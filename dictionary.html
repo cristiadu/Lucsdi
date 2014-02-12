@@ -5,11 +5,38 @@
 			<link rel="stylesheet" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
 	</head>
 			
 	<body>
+
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#btn-myprofile">My Profile</a>
+                    </li>
+                    <li><a href="#btn-about">About</a>
+                    </li>
+                    <li><a href="#btn-help">Help/FAQ</a>
+                    </li>
+                    <li><a href="#btn-logout">Logout</a>
+                    </li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 		<div class="container">
 			<div class="row">
@@ -30,13 +57,18 @@
 						</form>
 					</div>
 					<div class="row">
-						<div id="google_translate_element"></div><script>
+						<div class="margin-trans">
+						<div id="google_translate_element"></div>
+							<script type="text/javascript">
 									function googleTranslateElementInit() {
-									new google.translate.TranslateElement({
-									pageLanguage: 'en'
-									}, 'google_translate_element');
+										new google.translate.TranslateElement({
+											pageLanguage: 'en', autoDisplay: false}, 
+											'google_translate_element');
 									}
-									</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+							</script>
+							<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+							</script>
+							</div> <!--end of added new div--> 
 						<div id="content-dict"class="col-md-12 col-xs-12 content-dict2" >
 							<br>
 							<br>
@@ -64,6 +96,7 @@
 							<br>
 						</div>
 					</div>
+					
 					<div class="row">
 						<div class="col-md-12 col-xs-12">
 							<h1 align="center" class="text-initial"> Dictionary</h1>
