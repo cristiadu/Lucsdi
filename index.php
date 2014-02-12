@@ -9,23 +9,7 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-1 col-md-3"></div>
-				<div class="initial-page col-xs-12 col-md-5">
-					<div class="row margin-initial">
-						<div class="col-md-12 col-xs-12" align="center">
-							<img class="img-ucsd" src="img/ucsd-logo.gif"></img>
-						</div>
-					</div>
-					<div class="row margin-initial2">
-						<div class="col-md-12 col-xs-12 div-line-initial"><h2 align="center" class="text-initial">Lost in Translation</h2></div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-xs-12 div-initial-enter">
-							<button type="button" id="btn-enter" class="btn btn-primary col-md-12 col-xs-12 btn-initial-enter"><h3>Enter</h3></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-1 col-md-3"></div>
+				
 			</div>
 		</div>
 		
