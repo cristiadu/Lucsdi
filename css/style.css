@@ -14,7 +14,7 @@
 }
 
 html,
-      body,.container,.row {
+      body,.height-hundred{
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
       }
