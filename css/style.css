@@ -11,6 +11,14 @@
 	background-image:url("../img/bg-init.jpg");
 	background-size: cover;
 	background-position: center;
+	padding-top: 8%;
+	padding-left: 2%;
+}
+
+.font-initial{
+	color: #F0F0F0;
+	font-size: 70px;
+
 }
 
 html,
