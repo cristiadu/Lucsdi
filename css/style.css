@@ -1,4 +1,8 @@
 
+.navbar2 {
+	position: static;
+	width: 100%;
+}
 .meganandiecover {
 	background:url("../img/meganandiecover.jpeg");
 	background-size: cover;

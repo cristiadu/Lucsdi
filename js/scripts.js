@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+	$("#btn-myprofile").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "myprofile.html");
+	});
+
+	$("#btn-about").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "about.html");
+	});
+
+	$("#btn-help").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "help.html");
+	});
+
+	$("#btn-logout").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "logout.html");
+	});
+
 	$("#btn-enter").click(function(){
 		event.preventDefault();
 		$(location).attr('href',"menu.html");
