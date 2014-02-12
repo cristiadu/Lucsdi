@@ -15,10 +15,18 @@
 	background-image:url("../img/bg-init.jpg");
 	background-size: cover;
 	background-position: center;
+	padding-top: 8%;
+	padding-left: 2%;
+}
+
+.font-initial{
+	color: #F0F0F0;
+	font-size: 70px;
+
 }
 
 html,
-      body,.container,.row {
+      body,.height-hundred{
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
       }

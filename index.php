@@ -7,15 +7,28 @@
 	</head>
 			
 	<body>
-		<div id="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-1 col-md-3"></div>
-					<div class="initial-page col-xs-12 col-md-5">
-
+		<div class="container height-hundred">
+			<div class="row height-hundred">
+				<div class="col-xs-1 col-md-3"></div>
+				<div id="wrap" class="initial-page col-xs-12 col-md-5">
+					<div class="row">
+						<div class="col-xs-12 col-md-12">
+							<h1 align="left" class="font-initial">World</h1>
+							<h1 align="center" class="font-initial">University</h1>
+						</div>
+						<div class="col-xs-12 col-md-12">
+							<form>
+								<input type="text" class="form-control col-xs-12 col-md-12" name="user" placeholder="Type your username">
+								<br><br>
+								<input type="password" class="form-control col-xs-12 col-md-12" name="password" placeholder="Type your password">
+								<br><br>
+								<button  type="button" class="btn btn-primary btn-lg">Sign Up</button>
+								<button type="button" class="btn btn-primary btn-lg">Login</button>
+							</form>
+						</div>
 					</div>
-					<div class="col-xs-1 col-md-3"></div>
 				</div>
+				<div class="col-xs-1 col-md-3"></div>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
