@@ -13,15 +13,17 @@
 				<div id="wrap" class="initial-page col-xs-12 col-md-5">
 					<div class="row">
 						<div class="col-xs-12 col-md-12">
-							<h1 align="left">World</h1>
-							<h1 align="center">University</h1>
+							<h1 align="left" class="font-initial">World</h1>
+							<h1 align="center" class="font-initial">University</h1>
 						</div>
 						<div class="col-xs-12 col-md-12">
 							<form>
 								<input type="text" class="form-control col-xs-12 col-md-12" name="user" placeholder="Type your username">
-								<input type="password" class="form-control col-xs-12 col-md-12" name="password" "Type your password">
-								<button type="button" class="btn btn-primary">Sign Up</button>
-								<button type="button" class="btn btn-primary">Login</button>
+								<br><br>
+								<input type="password" class="form-control col-xs-12 col-md-12" name="password" placeholder="Type your password">
+								<br><br>
+								<button  type="button" class="btn btn-primary btn-lg">Sign Up</button>
+								<button type="button" class="btn btn-primary btn-lg">Login</button>
 							</form>
 						</div>
 					</div>
