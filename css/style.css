@@ -1,5 +1,4 @@
 
-
 }
 .initial-page{
 	background-image:url("../img/bg-init.jpg");
@@ -67,5 +66,10 @@
 	margin-top: 15%;
 	margin-bottom: 5%;
 }
+
+.margin-trans{
+	padding-left: 3.5%;
+}
+
 
 
