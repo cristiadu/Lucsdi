@@ -10,6 +10,11 @@
 	padding: 100px 0;
 }
 
+.margin-trans{
+	padding-left: 3.5%;
+}
+
+
 
 .initial-page{
 	background-image:url("../img/bg-init.jpg");
