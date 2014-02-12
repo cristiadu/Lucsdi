@@ -1,6 +1,11 @@
-
-
+.meganandiecover {
+	background:url("../img/meganandiecover.jpeg");
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
 }
+
+
 .initial-page{
 	background-image:url("../img/bg-init.jpg");
 }
