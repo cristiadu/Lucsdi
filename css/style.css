@@ -1,3 +1,4 @@
+
 .navbar2 {
 	position: static;
 	width: 100%;
@@ -37,10 +38,33 @@
 }
 
 html,
+
       body,.height-hundred{
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
       }
+
+      .carousel {
+         height:50%;
+        }
+
+          .item,
+          .active,
+          .carousel-inner {
+            height:100%;
+          }
+
+          .fill {
+            width:100%;
+            height:100%;
+            background-position: center;
+            background-size: cover;
+          }
+
+          .section {
+            margin: 50px 0;
+          }
+
 
       /* Wrapper for page content to push down footer */
       #wrap {
