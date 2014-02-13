@@ -4,10 +4,11 @@
 	width: 100%;
 }
 .meganandiecover {
-	background:url("../img/meganandiecover.jpeg");
+	background:url("../img/meganandiecover.jpg");
 	background-size: cover;
 	text-align: center;
-	padding: 100px 0;
+	padding-top: 8%;
+  padding-left:2%;
 }
 
 .margin-trans{

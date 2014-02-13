@@ -22,8 +22,8 @@
 								<br><br>
 								<input type="password" class="form-control col-xs-12 col-md-12" name="password" placeholder="Type your password">
 								<br><br>
-								<button  type="button" class="btn btn-primary btn-lg">Sign Up</button>
-								<button type="button" class="btn btn-primary btn-lg">Login</button>
+								<button  type="button" class="btn btn-primary btn-lg" id = "btn-signup">Sign Up</button>
+								<button type="button" class="btn btn-primary btn-lg" id = "btn-login">Login</button>
 							</form>
 						</div>
 					</div>

@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	$("#btn-login").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "menu.html");
+	});
+
+	$("#btn-signup").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "menu.html")
+	});
+
 	$("#btn-myprofile").click(function(){
 		event.preventDefault();
 		$(location).attr('href', "myprofile.html");
