@@ -6,10 +6,8 @@
             <link rel="stylesheet" href="css/style.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -18,7 +16,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Home</a>
+                <a class="navbar-brand" href="menu.html">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,37 +35,78 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    <div class="meganandiecover">
-
-        <div class="logo-wrapper">
-            <img class="img-thumbnail" src="img/meganandie.jpg" />
-
-        </div>
-
-    </div>
-    <!-- /full-width-image-1 -->
+    <br>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12 section">
-                <h1 class="section-heading">An Interesting Headline Goes Here</h1>
-                <p class="lead section-lead">This stylish template features placeholder images from placehold.it and lorempixel! With some custom font stylings and awesome photos, you will have a beautiful website up and running in no time!</p>
-                <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo. Phasellus vestibulum sagittis purus laoreet varius. Pellentesque malesuada malesuada mattis. Aliquam sed porta nisi, eget suscipit dolor. Nam ipsum sapien, rhoncus eu leo eu, ultricies pellentesque tellus.</p>
+                <h1 class="section-heading">Help/FAQ</h1>
+                <br>
+
+             <script>
+
+function toggleElement(id)
+{
+    if(document.getElementById(id).style.display == 'none')
+    {
+        document.getElementById(id).style.display = '';
+    }
+    else
+    {
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
+<p>
+<a href="javascript:toggleElement('a1')">Is this mobile app only targetted for UCSD International Students?</a>
+</p>
+<div id="a1" style="display:none">
+No! Non-international students are encouraged to create a profile. The features of this app such as navigate, plan, and connect are great ways for new students to become integrated on campus. Additionally, bilingual students or students seeking to tutor or become acquainted with a second language can use this social app to meet international students on campus.
+</div>
+
+<p>
+<a href="javascript:toggleElement('a2')">How may I contact the International Students & Programs Office (ISPO)?</a>
+</p>
+<div id="a2" style="display:none">
+Phone: (858) 434=3730
+Mailing Address: 9500 Gilman Drive #0018 La Jolla, California 92093-0018
+Location: 1st Floor of International Center, across from Center Hall on Library Walk
+Hours: Monday through Friday 9:00AM to 4:00PM
+</div>
+
+<p>
+<a href="javascript:toggleElement('a3')">How can I get a Social Security Number(FF1 student)</a>
+</p>
+<div id="a3" style="display:none">
+You must apply in person at a local Social Security Administration office (SSA). F-1 students must provide the following documents to apply for a SSN:
+Job offer letter from your employer with a start date no more than 30 days in the future
+Verification letter from the UCSD International Center. Please complete and submit a Letter Request Form and your job offer letter from your employer to obtain a Verification letter. Verification letters take 5 business days to process.
+Passport
+I-94 card (small white card stapled in the passport)
+NOTE: Copy the front and back of the I-94 to include with your application.
+UCSD ID Card, driver’s license, or other form of photo identification.
+Form SS-5
+Valid I-20 form
+</div>
+
+<p>
+<a href="javascript:toggleElement('a4')">How do I take a leave of absence?</a>
+</p>
+
+<div id="a4" style="display:none">
+Students who wish to go on a leave of absence from UC San diego for one or more quarters must obtain permission from the International Students & Programs Office prior to their proposed leave. Both F-1 and J-1 students can find out how to do this on our Leave of Absence page.
+</div>
+</div>
+
+                
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+   
 
-    <!-- FOOTER -->
-    <div class="container">
-        <footer>
-            <div class="row">
-                <h1> Help </h1>
-            </div>
-        </footer>
-    </div>
-
-    </div>
     <!-- /container -->
 
     <!-- JavaScript -->
