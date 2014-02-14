@@ -7,88 +7,96 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-            <div class="container">
-            <div class="row">
-                <div class="col-xs-1 col-md-3"></div>
-                <div id="wrap" class="col-xs-12 col-md-5">
-    
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="menu.html">Home</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a id="btn-myprofile">My Profile</a>
-                    </li>
-                    <li><a id="btn-about">About</a>
-                    </li>
-                    <li><a id="btn-help">Help/FAQ</a>
-                    </li>
-                    <li><a id="btn-logout">Logout</a>
-                    </li>
-                </ul>
+    <div id="wrap">
+    
+        <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="menu.html">Home</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a id="btn-myprofile">My Profile</a>
+                        </li>
+                        <li><a id="btn-about">About</a>
+                        </li>
+                        <li><a id="btn-help">Help/FAQ</a>
+                        </li>
+                        <li><a id="btn-logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <br>
-    <br>
-    <br>
-
-<div>
-<h3> Sign Up Here </h3>
-
-<form>
-First name: <input type="text" name="firstname"><br>
-<br>
-Last name: <input type="text" name="lastname"><br>
-<br>
-Username: <input type="text" name="username"><br>
-<br>
-Password: <input type="text" name="password"><br>
-<br>
-<input type="radio" name="sex" value="male">Male<br>
-<br>
-<input type="radio" name="sex" value="female">Female<br>
-<br>
-</form>
-<h5>Short Bio:</h5>
-<textarea rows="4" cols="50">
-</textarea>
-<h5>Spoken Languages:</h5>
-<textarea rows="4" cols="50">
-</textarea>
-<h5>Hometown/Country:</h5>
-<textarea rows="4" cols="50">
-</textarea>
-<h5>Current Classes:</h5>
-<textarea rows="4" cols="50">
-</textarea>
-<h5>Interests:</h5>
-<textarea rows="4" cols="50">
-</textarea>
-<br>
- <a class="btn btn-primary" href="menu.html">Submit </a>
- <br>
- <br>
- <br>
+        
 
 
-
-
-
-
-<div>
-
+        <div id="content-minor" class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h3 class="page-header">Sign Up Here</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="firstname">First name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter first name">
+                      </div>
+                      <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter last name">
+                      </div>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                      </div>
+                      <div class="form-group">
+                        <label for="shbio">Short Bio</label>
+                        <textarea class="form-control" name="shbio" id="shbio" rows="4"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="languages">Spoken Languages</label>
+                        <textarea class="form-control" name="languages" id="languages" rows="4"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="home-country">Hometown/Country</label>
+                        <textarea class="form-control" name="home-country" id="home-country" rows="4"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="classes">Current Classes</label>
+                        <textarea class="form-control" name="classes" id="classes" rows="4"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="interests">Interests</label>
+                        <textarea class="form-control" name="interests" id="interests" rows="4"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary col-xs-12 col-md-2" href="menu.html">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container">
+    <h1 align="center">Sign Up</h1>
+  </div>
+</div>   
     <!-- /container -->
 
     <!-- JavaScript -->

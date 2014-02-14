@@ -8,48 +8,53 @@
   </head>
 
 	<body>
+    <div id="wrap">
+      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="menu.html">Home</a>
+              </div>
 
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="menu.html">Home</a>
-            </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="myprofile.html">My Profile</a>
+                      </li>
+                      <li><a href="about.html">About</a>
+                      </li>
+                      <li><a href="help.html">Help/FAQ</a>
+                      </li>
+                      <li><a href="logout.html">Logout</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="myprofile.html">My Profile</a>
-                    </li>
-                    <li><a href="about.html">About</a>
-                    </li>
-                    <li><a href="help.html">Help/FAQ</a>
-                    </li>
-                    <li><a href="logout.html">Logout</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 section">
-          <br>
-          <br>
-          <h1 align="center" class="section-heading">Plan</h1>
-          <iframe src="https://www.google.com/calendar/embed?title=UCSD%20Activities%20and%20Events&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=centerforstudentinvolvement%40gmail.com&amp;color=%230F4B38&amp;src=o2d6ehet04abq07qnk86oq81p0%40group.calendar.google.com&amp;color=%23853104&amp;src=act9v5sl49avmrgs6mnolrh9jmpnak2l%40import.calendar.google.com&amp;color=%2342104A&amp;src=icenter%40ucsd.edu&amp;color=%232F6309&amp;src=ucsdispo%40gmail.com&amp;color=%23B1365F&amp;src=ischolars%40ucsd.edu&amp;color=%23B1440E&amp;src=2s88lioqm8t9821ttplek4i904%40group.calendar.google.com&amp;color=%23333333&amp;src=registrar%40ucsd.edu&amp;color=%23B1365F&amp;src=ucsdrecmarketing%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="900" height="1100" frameborder="0" scrolling="no"></iframe>
+    <div id="content" class="container height-hundred">
+      <div class="row height-hundred">
+        <div class="col-md-12 col-xs-12 height-hundred">
+          <iframe class="iframe-map" src="https://www.google.com/calendar/embed?title=UCSD%20Activities%20and%20Events&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=centerforstudentinvolvement%40gmail.com&amp;color=%230F4B38&amp;src=o2d6ehet04abq07qnk86oq81p0%40group.calendar.google.com&amp;color=%23853104&amp;src=act9v5sl49avmrgs6mnolrh9jmpnak2l%40import.calendar.google.com&amp;color=%2342104A&amp;src=icenter%40ucsd.edu&amp;color=%232F6309&amp;src=ucsdispo%40gmail.com&amp;color=%23B1365F&amp;src=ischolars%40ucsd.edu&amp;color=%23B1440E&amp;src=2s88lioqm8t9821ttplek4i904%40group.calendar.google.com&amp;color=%23333333&amp;src=registrar%40ucsd.edu&amp;color=%23B1365F&amp;src=ucsdrecmarketing%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style=" border-width:0 "frameborder="0" scrolling="no">
+          </iframe>
         </div>
       </div>
     </div>
-	
+
+    <div id="push"></div>
+	</div>
+  <div id="footer">
+          <div class="container">
+            <h1 align="center">Plan</h1>
+          </div>
+        </div>   
   <!-- JavaScripts -->	
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>  

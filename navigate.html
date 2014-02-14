@@ -8,47 +8,54 @@
 	</head>
 
 	<body>
+        <div id="wrap">
+    		<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            	<div class="container">
+                	<div class="navbar-header">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        	<span class="sr-only">Toggle navigation</span>
+                        	<span class="icon-bar"></span>
+                        	<span class="icon-bar"></span>
+                        	<span class="icon-bar"></span>
+                    	</button>
+                    	<a class="navbar-brand" href="menu.html">Home</a>
+                	</div>
 
-		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        	<div class="container">
-            	<div class="navbar-header">
-                	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    	<span class="sr-only">Toggle navigation</span>
-                    	<span class="icon-bar"></span>
-                    	<span class="icon-bar"></span>
-                    	<span class="icon-bar"></span>
-                	</button>
-                	<a class="navbar-brand" href="menu.html">Home</a>
+                	<!-- Collect the nav links, forms, and other content for toggling -->
+                	<div class="collapse navbar-collapse navbar-ex1-collapse">
+                    	<ul class="nav navbar-nav">
+                        	<li><a href="myprofile.html">My Profile</a>
+                        	</li>
+                        	<li><a href="about.html">About</a>
+                        	</li>
+                        	<li><a href="help.html">Help/FAQ</a>
+                        	</li>
+                        	<li><a href="logout.html">Logout</a>
+                        	</li>
+                    	</ul>
+                	</div>
+                	<!-- /.navbar-collapse -->
             	</div>
-
-            	<!-- Collect the nav links, forms, and other content for toggling -->
-            	<div class="collapse navbar-collapse navbar-ex1-collapse">
-                	<ul class="nav navbar-nav">
-                    	<li><a href="myprofile.html">My Profile</a>
-                    	</li>
-                    	<li><a href="about.html">About</a>
-                    	</li>
-                    	<li><a href="help.html">Help/FAQ</a>
-                    	</li>
-                    	<li><a href="logout.html">Logout</a>
-                    	</li>
-                	</ul>
-            	</div>
-            	<!-- /.navbar-collapse -->
+            	<!-- /.container -->
         	</div>
-        	<!-- /.container -->
-    	</nav>
-
-		<div class="row">
-			<div class="col-md-12 col-xs-12">
-				<br>
-				<br>
-				<h1 align="center" class="text-initial"> Navigate</h1>
-			</div>
-		</div>
-	 
-		<iframe width='900' height='1100' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://maps.ucsd.edu/mapping/viewer/embed/embed.htm?mkey=1&lc=open&km=open&rc=closed&zoom=1&X=0.5&Y=0.5&layers=None&background=2&label=0&overlays=None'>
-		</iframe>
+            <div id='content' class="container height-hundred">
+                <div class="row height-hundred">
+                   
+                    <div class="col-xs-12 col-md-12 height-hundred">
+                        <iframe class="iframe-map" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://maps.ucsd.edu/mapping/viewer/embed/embed.htm?mkey=1&lc=open&km=open&rc=closed&zoom=1&X=0.5&Y=0.5&layers=None&background=2&label=0&overlays=None'>
+                        </iframe>
+                    </div>
+                
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+		<div id="footer">
+          <div class="container">
+            <h1 align="center">Navigate</h1>
+          </div>
+        </div>	 
+		
 
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>	
