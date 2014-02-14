@@ -13,8 +13,8 @@
 				<div id="wrap" class="initial-page col-xs-12 col-md-5">
 					<div class="row">
 						<div class="col-xs-12 col-md-12">
-							<h3 align="left" class="font-initial">Lost in</h3>
-							<h3 align="center" class="font-initial">Translation</h3>
+							<h3 align="left" style="color:white;">Lost in</h3>
+							<h3 align="center" style="color:white;">Translation</h3>
 						</div>
 						<div class="col-xs-12 col-md-12">
 							<form>
