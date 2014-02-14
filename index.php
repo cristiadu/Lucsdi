@@ -13,8 +13,8 @@
 				<div id="wrap" class="initial-page col-xs-12 col-md-5">
 					<div class="row">
 						<div class="col-xs-12 col-md-12">
-							<h5 align="center" style="color:white;">Lost in</h5>
-							<h5 align="center" style="color:white;">Translation</h5>
+							<h1 align="center" style="color:white;">Lost in</h1>
+							<h1 align="center" style="color:white;">Translation</h1>
 						</div>
 
 						<div class="col-xs-12 col-md-12">
