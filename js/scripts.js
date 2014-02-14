@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 	$("#btn-signup").click(function(){
 		event.preventDefault();
-		$(location).attr('href', "menu.html")
+		$(location).attr('href', "sign-up.html")
 	});
 
 	$("#btn-myprofile").click(function(){
