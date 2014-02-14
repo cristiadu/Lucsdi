@@ -16,11 +16,12 @@
 							<h1 align="center" style="color:white;">Lost in</h1>
 							<h1 align="center" style="color:white;">Translation</h1>
 						</div>
-<br>
-<br>
-<br>
+
 						<div class="col-xs-12 col-md-12">
 							<form>
+								<br>
+								<br>
+								<br>
 								<input type="text" class="form-control col-xs-12 col-md-12" name="user" placeholder="Type your username">
 								<br><br>
 								<input type="password" class="form-control col-xs-12 col-md-12" name="password" placeholder="Type your password">
