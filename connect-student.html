@@ -1,128 +1,142 @@
 <!DOCTYPE html>
 <html>
-	<head>
-			<link rel="stylesheet" href="css/bootstrap.min.css">
-			<link rel="stylesheet" href="css/style.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>Connect: Students</title>
-	</head>
+		<title>Connect: Students</title>
+</head>
 
-	<body>
+<body>
 
-			<div class="container">
-			<div class="row">
-				<div class="col-xs-1 col-md-3"></div>
-				<div id="wrap" class="col-xs-12 col-md-5">
+<div id="wrap">
     
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="menu.html">Home</a>
+            <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="menu.html">Home</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a id="btn-myprofile">My Profile</a>
+                            </li>
+                            <li><a id="btn-about">About</a>
+                            </li>
+                            <li><a id="btn-help">Help/FAQ</a>
+                            </li>
+                            <li><a id="btn-logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a id="btn-myprofile">My Profile</a>
-                    </li>
-                    <li><a id="btn-about">About</a>
-                    </li>
-                    <li><a id="btn-help">Help/FAQ</a>
-                    </li>
-                    <li><a id="btn-logout">Logout</a>
-                    </li>
-                </ul>
+
+    <div id="content-minor" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3 class="page-header">Join a Meetup</h3>
             </div>
-
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <br>
-    <br>
-
-    <div class="container">
-    <h1 align="center">Connect to Students</h1>
-    <h3>Join a Meetup</h3>
-    <div class="row carousel-holder">
-
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="img/gray.jpg" alt="">
-                                    <div class="carousel-caption">
-                                        <h4>I-House Cares at Great Hall 2/15 @ 2pm</h4>
-                                        
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="img/gray.jpg" alt="">
-                                    <div class="carousel-caption">
- 
-                                            <h4>Meet the Beach La Jolla Shores 2/16 @ 1pm</h4>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="img/gray.jpg" alt="">
-                                    <div class="carousel-caption">
-                                        
-                                                <h4>International Students Mixer at Great Hall 2/17 @ 7pm</h4>
-                        
-                                    </div>
-                                </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="slide-image" src="img/gray.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h4>I-House Cares at Great Hall 2/15 @ 2pm</h4>
+                                
                             </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="icon-prev"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="icon-next"></span>
-                            </a>
+                        </div>
+                        <div class="item">
+                            <img class="slide-image" src="img/gray.jpg" alt="">
+                            <div class="carousel-caption">
+
+                                    <h4>Meet the Beach La Jolla Shores 2/16 @ 1pm</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="slide-image" src="img/gray.jpg" alt="">
+                            <div class="carousel-caption">
+                                
+                                        <h4>International Students Mixer at Great Hall 2/17 @ 7pm</h4>
+                
+                            </div>
                         </div>
                     </div>
-                    <br>
-                <h3>Start a Meetup</h3>
-                <br>
-                <form name="input" action="html_form_action.asp" method="get">
-                Event title: <input type="text" name="EventTitle"value="">
-                <br>
-                <br>
-                Host: <input type="text" name="Host" value="">
-                <br>
-                <br>
-                Where: <input type="text" name="Where" value="">
-                <br>
-                <br>
-                Date/Time: <input type="text" name="Host" value="">
-                <br>
-                <br>
-                Email: <input type="text" name="Host" value="">
-                <br>
-                <br>
-                Phone number: <input type="text" name="Host" value="">
-                <br>
-                <br>
-                <a class="btn btn-primary" href="connect-meetupconfirm.html">Submit</a>
-                <br>
-                <br>
-                <br>
-
-
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3 class="page-header">Start a Meetup</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="title">Event title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter event title">
+                  </div>
+                  <div class="form-group">
+                    <label for="host">Host</label>
+                    <input type="text" class="form-control" id="host" name="host" placeholder="Enter the host">
+                  </div>
+                  <div class="form-group">
+                    <label for="local">Local</label>
+                    <input type="text" class="form-control" id="local" name="local" placeholder="Enter the local">
+                  </div>
+                  <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date" name="date" placeholder="Enter the date">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number">
+                  </div>
+                  <a class="btn btn-primary col-xs-12 col-md-3" href="connect-meetupconfirm.html">Submit</a>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div id="push"></div>
+</div>
+<div id="footer">
+          <div class="container">
+            <h1 align="center">Connect to Students</h1>
+          </div>
+        </div>   
 
-    
 
 
     <!-- Javascripts -->

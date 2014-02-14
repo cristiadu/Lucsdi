@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>
-			<link rel="stylesheet" href="css/bootstrap.min.css">
-			<link rel="stylesheet" href="css/style.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>Connect: Tutors</title>
-	</head>
+		<title>Connect: Tutors</title>
+</head>
 
-	<body>
+<body>
 
-			<div class="container">
-			<div class="row">
-				<div class="col-xs-1 col-md-3"></div>
-				<div id="wrap" class="col-xs-12 col-md-5">
+
+	<div id="wrap">
     
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,127 +41,164 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
-
-    <br>
-    <br>
-    <h1 align="center">Meet With A:</h1>
+    </div>
     
     <!-- Find a Tutor -->
-    <div class="container">
-        <h3 align="left">Tutor</h3>
-        <form name="input" action="html_form_action.asp" method="get">
-            Course name: <input type="text" name="CourseName" value=""><br><br>
-            Course number: <input type="text" name="CourseNumber" value=""><br>
-
-        </form>
-        <br>
-        <select>
-            <option value="" disabled="disabled" selected="selected">Find a Tutor who Speaks:</option>
-            <option value="English">English</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
-            <option value="French">French</option>
-            <option value="German">German</option>
-            <option value="Italian">Hindi</option>
-            <option value="Italian">Italian</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Korean">Korean</option>
-            <option value="Spanish">Spanish</option>
-        </select>
-    </div>
-
-    <br>
-
-    <!-- Find an Advisor -->
-    <div class="container">
-        <h3 align="left">Advisor</h3>
-        <select>
-            <option value="" disabled="disabled" selected="selected">Please Select a Department</option>
-            <option value="Anthropology">Anthropology</option>
-            <option value="Biology">Biology</option>
-            <option value="Bioengineering">Bioengineering</option>
-            <option value="Chemistry">Chemistry</option>
-            <option value="Classical Studies">Classical Studies</option>
-            <option value="Cognitive Science">Cognitive Science</option>
-            <option value="Computer Science">Computer Science</option>
-            <option value="Economics">Economics</option>
-            <option value="Engineering">Engineering</option>
-            <option value="History">History</option>
-            <option value="Literature">Literature</option>
-            <option value="Linguistics">Linguistics</option>
-            <option value="Mathematics">Mathematics</option>
-            <option value="Music">Music</option>
-            <option value="Physics">Physics</option>
-            <option value="Political Science">Political Science</option>
-            <option value="Psychology">Psychology</option>
-            <option value="Sociology">Sociology</option>
-            <option value="Visual Arts">Visual Arts</option>
-        </select>
-        <br>
-        <br>
-        <select>
-            <option value="" disabled="disabled" selected="selected">Please Select a College</option>
-            <option value="Eleanor Roosevelt">Eleanor Roosevelt</option>
-            <option value="Marshall">Marshall</option>
-            <option value="Muir">Muir</option>
-            <option value="Revelle">Revelle</option>
-            <option value="Sixth">Sixth</option>
-            <option value="Warren">Warren</option>
-        </select>
-        <br>
-        <br>
-        <select>
-            <option value="" disabled="disabled" selected="selected">Find an International Advisor</option>
-            <option value="Advisor1">Graciela Casas-Silva</option>
-            <option value="Advisor2">Gabriela Hoffmann, ITTP Coordinator</option>
-            <option value="Advisor3">Marie Manlapaz, Orientation Co-Coordinator</option>
-            <option value="Advisor4">Laura Page</option>
-            <option value="Advisor5">Ricky Paniagua</option>
-            <option value="Advisor6">Hannah Reese, International Leaders Coordinator</option>
-            <option value="Advisor7">Lisa Swid, Triton Trekkers Coordinator</option>
-            <option value="Advisor8">Shelly Taskin</option>
-            <option value="Advisor9">Carol Robertson</option>
-        </select>
-        <br>
-        <br>
-        <form name="input" action="html_form_action.asp" method="get">
-            Enter a Date: <input type="text" name="Date" value="">
-        </form>
-        <br>
-        <select>
-            <option value="" disabled="disabled" selected="selected">Schedule a Meeting</option>
-            <option value="Time1">9:00 am</option>
-            <option value="Time2">9:30 am</option>
-            <option value="Time3">10:00 am</option>
-            <option value="Time4">10:30 am</option>
-            <option value="Time5">11:00 am</option>
-            <option value="Time6">11:30 am</option>
-            <option value="Time7">12:00 pm</option>
-            <option value="Time8">12:30 pm</option>
-            <option value="Time9">1:00 pm</option>
-            <option value="Time10">1:30 pm</option>
-            <option value="Time11">2:00 pm</option>
-            <option value="Time12">2:30 pm</option>
-            <option value="Time13">3:00 pm</option>
-            <option value="Time14">3:30 pm</option>
-            <option value="Time14">4:00 pm</option>
-        </select>
-        <br><br>
-
-        <!-- Enter Contact Info for Confirmation -->
-        <h3 align="left">Enter your Contact Info</h3>
-        <form name="input" action="html_form_action.asp" method="get">
-            Enter your Email: <input type="text" name="Email" value=""><br><br>
-            Enter your Phone Number: <input type="text" name="Number" value="">
-        </form>
-
-        <div class="row text-center">  
-            <br>  
-            <a class="btn btn-primary" href="confirmation.html">Schedule Appointment</a>
+    <div id="content-minor" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3 class="page-header">Meet with a tutor</h3>
+            </div>
         </div>
-        <br>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <form role="form">
+                      <div class="form-group">
+                        <label for="course-name">Course name</label>
+                        <input type="text" class="form-control" id="course-name" name="course-name" placeholder="Enter course name">
+                      </div>
+                      <div class="form-group">
+                        <label for="course-number">Course number</label>
+                        <input type="text" class="form-control" id="course-number" name="course-number" placeholder="Enter course number">
+                      </div>
+                      <div class="form-group">
+                        
+                        <select class="form-control" name="language-tutor" id="language-tutor">
+                            <option value="" disabled="disabled" selected="selected">Find a Tutor who Speaks:</option>
+                            <option value="English">English</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+                            <option value="French">French</option>
+                            <option value="German">German</option>
+                            <option value="Italian">Hindi</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="name-st">Your name</label>
+                        <input type="text" class="form-control" id="name-st" name="name-st" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email-st">Your email</label>
+                        <input type="email" class="form-control" id="email-st" name="email-st" placeholder="Enter your email">
+                      </div>
+                      <a class="btn btn-primary col-xs-12 col-md-3" href="confirmation.html">Schedule Appointment</a>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3 class="page-header">Meet with an advisor</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <form role="form">
+                      <div class="form-group">
+                        <select class="form-control" id="department-ad" name="department-ad">
+                            <option value="" disabled="disabled" selected="selected">Please Select a Department</option>
+                            <option value="Anthropology">Anthropology</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Bioengineering">Bioengineering</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Classical Studies">Classical Studies</option>
+                            <option value="Cognitive Science">Cognitive Science</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Economics">Economics</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="History">History</option>
+                            <option value="Literature">Literature</option>
+                            <option value="Linguistics">Linguistics</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Music">Music</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Political Science">Political Science</option>
+                            <option value="Psychology">Psychology</option>
+                            <option value="Sociology">Sociology</option>
+                            <option value="Visual Arts">Visual Arts</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control" id="college-ad" name="college-ad">
+                            <option value="" disabled="disabled" selected="selected">Please Select a College</option>
+                            <option value="Eleanor Roosevelt">Eleanor Roosevelt</option>
+                            <option value="Marshall">Marshall</option>
+                            <option value="Muir">Muir</option>
+                            <option value="Revelle">Revelle</option>
+                            <option value="Sixth">Sixth</option>
+                            <option value="Warren">Warren</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        
+                        <select class="form-control" name="int-ad" id="int-ad">
+                            <option value="" disabled="disabled" selected="selected">Find an International Advisor</option>
+                            <option value="Advisor1">Graciela Casas-Silva</option>
+                            <option value="Advisor2">Gabriela Hoffmann, ITTP Coordinator</option>
+                            <option value="Advisor3">Marie Manlapaz, Orientation Co-Coordinator</option>
+                            <option value="Advisor4">Laura Page</option>
+                            <option value="Advisor5">Ricky Paniagua</option>
+                            <option value="Advisor6">Hannah Reese, International Leaders Coordinator</option>
+                            <option value="Advisor7">Lisa Swid, Triton Trekkers Coordinator</option>
+                            <option value="Advisor8">Shelly Taskin</option>
+                            <option value="Advisor9">Carol Robertson</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Enter date">
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control" id="hour-ad" name="hour-ad">
+                            <option value="" disabled="disabled" selected="selected">Schedule a Meeting</option>
+                            <option value="Time1">9:00 am</option>
+                            <option value="Time2">9:30 am</option>
+                            <option value="Time3">10:00 am</option>
+                            <option value="Time4">10:30 am</option>
+                            <option value="Time5">11:00 am</option>
+                            <option value="Time6">11:30 am</option>
+                            <option value="Time7">12:00 pm</option>
+                            <option value="Time8">12:30 pm</option>
+                            <option value="Time9">1:00 pm</option>
+                            <option value="Time10">1:30 pm</option>
+                            <option value="Time11">2:00 pm</option>
+                            <option value="Time12">2:30 pm</option>
+                            <option value="Time13">3:00 pm</option>
+                            <option value="Time14">3:30 pm</option>
+                            <option value="Time14">4:00 pm</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="name-st">Your name</label>
+                        <input type="text" class="form-control" id="name-st" name="name-st" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email-st">Your email</label>
+                        <input type="email" class="form-control" id="email-st" name="email-st" placeholder="Enter your email">
+                      </div>
+                      <a class="btn btn-primary col-xs-12 col-md-3" href="confirmation.html">Schedule Appointment</a>
+                </form>
+            </div>
+        </div>
+
+          
+       
+        
     </div>
+    <div id="push"></div>
+</div>
+<div id="footer">
+          <div class="container">
+            <h1 align="center">Tutor & Advisor</h1>
+          </div>
+        </div>   
+   
+
+    
+       
 
 
     <!-- Javascripts -->
