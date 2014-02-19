@@ -53,6 +53,7 @@ app.get('/tutorAdvisor', connect.tutorAdvisor);
 app.get('/navigate', navigate.view);
 app.get('/plan', plan.view);
 app.get('/translate', translate.view);
+app.get('/searchDict/:word', translate.searchDict);
 
 // Example route
 // app.get('/users', user.list);
