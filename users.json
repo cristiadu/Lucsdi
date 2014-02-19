@@ -20,12 +20,25 @@
 	{
 		"username":"megan",
 		"password":"456",
-		"firstname":"something",
-		"lastname":"something",
-		"bio":"something",
-		"languages":"something",
-		"home":"something",
-		"classes":[{},{}],
+		"firstname":"Megan",
+		"lastname":"Ring",
+		"bio":"I am currently a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD.",
+		"languages":"English (Native language), Spanish (Basic proficiency)",
+		"home":"Irvine, CA",
+		"classes":[
+					{
+						"name":"COGS 120"
+					},
+					{
+						"name":"CSE 21"
+					},
+					{
+						"name":"MMW 14"
+					},
+					{
+						"name":"VIS 124BN"
+					}
+					],
 		"interests":[{},{}]
 	},
 	{
