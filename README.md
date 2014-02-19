@@ -1,4 +1,4 @@
-lab6
+Lost In Translation
 ====
 
-Lab 6: AJAX
+A mobile application that allow international students from UCSD to know what is happening on campus.
