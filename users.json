@@ -1,0 +1,53 @@
+[
+	{
+		"username":"cristiano",
+		"password":"123",
+		"firstname":"something",
+		"lastname":"something",
+		"bio":"something",
+		"languages":"something",
+		"home":"something",
+		"classes":[
+					{
+						"name":"COGS 120"
+					},
+					{
+						"name":"COGS 118A"
+					}
+					],
+		"interests":[{},{}]
+	},
+	{
+		"username":"megan",
+		"password":"456",
+		"firstname":"something",
+		"lastname":"something",
+		"bio":"something",
+		"languages":"something",
+		"home":"something",
+		"classes":[{},{}],
+		"interests":[{},{}]
+	},
+	{
+		"username":"andie",
+		"password":"789",
+		"firstname":"something",
+		"lastname":"something",
+		"bio":"something",
+		"languages":"something",
+		"home":"something",
+		"classes":[{},{}],
+		"interests":[{},{}]
+	},
+	{
+		"username":"something",
+		"password":"something",
+		"firstname":"something",
+		"lastname":"something",
+		"bio":"something",
+		"languages":"something",
+		"home":"something",
+		"classes":[{},{}],
+		"interests":[{},{}]
+	}
+]

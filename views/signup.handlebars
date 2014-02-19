@@ -19,19 +19,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="menu">Home</a>
+                    <a class="navbar-brand" href="/">Home</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a id="btn-myprofile">My Profile</a>
-                        </li>
                         <li><a id="btn-about">About</a>
                         </li>
                         <li><a id="btn-help">Help/FAQ</a>
-                        </li>
-                        <li><a id="btn-logout">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +44,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <form role="form">
+                    <form role="form" method="post" action="confirmSignUp">
                       <div class="form-group">
                         <label for="firstname">First name</label>
                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter first name">
@@ -66,26 +62,28 @@
                         <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
                       </div>
                       <div class="form-group">
-                        <label for="shbio">Short Bio</label>
-                        <textarea class="form-control" name="shbio" id="shbio" rows="4"></textarea>
+                        <label for="bio">Short Bio</label>
+                        <textarea class="form-control" name="bio" id="bio" rows="4"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="languages">Spoken Languages</label>
                         <textarea class="form-control" name="languages" id="languages" rows="4"></textarea>
                       </div>
                       <div class="form-group">
-                        <label for="home-country">Hometown/Country</label>
-                        <textarea class="form-control" name="home-country" id="home-country" rows="4"></textarea>
+                        <label for="home">Hometown/Country</label>
+                        <textarea class="form-control" name="home" id="home" rows="4"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="classes">Current Classes</label>
+                        <small><span class="red">*</span>One class per line of the textbox</small>
                         <textarea class="form-control" name="classes" id="classes" rows="4"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="interests">Interests</label>
+                        <small><span class="red">*</span>One interest per line of the textbox</small>
                         <textarea class="form-control" name="interests" id="interests" rows="4"></textarea>
                       </div>
-                      <button type="link" class="btn btn-primary col-xs-12 col-md-2" href="menu.html">Submit</button>
+                      <input type="submit" class="btn btn-primary col-xs-12 col-md-2" value="Submit">
                     </form>
                 </div>
             </div>

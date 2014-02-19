@@ -2,12 +2,21 @@ $(document).ready(function(){
 
 	$("#btn-login").click(function(){
 		event.preventDefault();
-		$(location).attr('href', "menu");
+		$.post('login',{
+			"username" : $("#username").val(),
+			'password': $("#password").val()
+		},function(result){
+				if(result!=null)
+					$(location).attr('href', "menu");
+				else
+					$("#error").html("<small class='red'>username or password incorrect</small>");
+			
+			});
 	});
 
 	$("#btn-signup").click(function(){
 		event.preventDefault();
-		$(location).attr('href', "signup")
+		$(location).attr('href', "signup");
 	});
 
 	$("#btn-myprofile").click(function(){
@@ -72,14 +81,18 @@ $(document).ready(function(){
 
 	$("#search-dict").click(function(){
 		event.preventDefault();
-		$.get('searchDict/'+$("#inputSearch").val(),function(result){
-			if(result!=null)
-				$("#content-dict").html(result['text']);
-			else
-				$("#content-dict").html("<h3>No results to show</h3>");
-		
-		});
-
+		if($("#inputSearch").val()!="")
+		{
+			$.get('searchDict/'+$("#inputSearch").val().toLowerCase(),function(result){
+				if(result!=null)
+					$("#content-dict").html(result['text']);
+				else
+					$("#content-dict").html("<h3>No results to show</h3>");
+			
+			});
+		}
+		else
+			$("#content-dict").html("<h3>No results to show</h3>");
 		
 	});
 
