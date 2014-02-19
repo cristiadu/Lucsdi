@@ -15,6 +15,21 @@ $(document).ready(function(){
 		$(location).attr('href', "myProfile");
 	});
 
+	$("#btn-orgClubs").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "clubsOrg");
+	});
+
+	$("#btn-tutorAdvisor").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "tutorAdvisor");
+	});
+
+	$("#btn-meetup").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "meetup");
+	});
+
 	$("#btn-about").click(function(){
 		event.preventDefault();
 		$(location).attr('href', "about");
