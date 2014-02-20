@@ -79,6 +79,16 @@ $(document).ready(function(){
 		$(location).attr('href',"connect");
 	});
 
+	$("#btn-meetupconfirm").click(function(){
+		event.preventDefault();
+		$(location).attr('href',"connect-meetupconfirm");
+	});
+
+	$("#btn-confirmAdvisor").click(function(){
+		event.preventDefault();
+		$(location).attr('href',"confirmation-advisor");
+	});
+
 	$("#search-dict").click(function(){
 		event.preventDefault();
 		if($("#inputSearch").val()!="")
