@@ -2,11 +2,16 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-    <title>Connect: Students</title>
+    <title>Join a Meetup</title>
 
 </head>
 
@@ -22,7 +27,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="menu.html">Home</a>
+                    <a class="navbar-brand" href="menu">Home</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,8 +63,8 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6">
                	<div class="thumbnail">
-               	<a href="connect-meetupconfirm.html">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+               	<a href="connect-meetupconfirm">
+                    <img class="img-responsive" src="img/ihousecares.jpg">
                 </a>
                     <div class="caption">
                         <h6>I-House Cares</h6>
@@ -69,8 +74,8 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6">
                	<div class="thumbnail">
-               	<a href="connect-meetupconfirm.html">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+               	<a id="btn-meetupconfirm">
+                    <img class="img-responsive" src="img/theshores.jpg">
                 </a>
                     <div class="caption">
                         <h6>Meet the Beach</h6>
@@ -81,28 +86,24 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6">
                	<div class="thumbnail">
-                    <a href="connect-meetupconfirm.html">
-						<img class="img-responsive" src="http://placehold.it/400x300">
+                    <a href="connect-meetupconfirm.handlebars">
+						<img class="img-responsive" src="img/gaslamp.jpg">
 					</a>
                     <div class="caption">
-                        <h6>35 people joined</h6>
-                        <h4><a class="btn btn-primary" href="connect-meetupconfirm.html">Join
-                        </a>
-                        </h4>
+                        <h6>45 people joined</h6>
+                        <button type="button" class="btn btn-primary col-xs-12 col-md-3" id="btn-meetupconfirm">Join</button>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6">
                	<div class="thumbnail">
-               		<a href="connect-meetupconfirm.html">
-                    	<img class="img-responsive" src="http://placehold.it/400x300">
+               		<a type="button" id="btn-meetupconfirm">
+                    	<img class="img-responsive" src="img/chargers.jpg">
                 	</a>
                     <div class="caption">
                         <h6>35 people going</h6>
-                        <h4><a class="btn btn-primary" href="connect-meetupconfirm.html">Join
-                        </a>
-                        </h4>
+                        <button type="button" class="btn btn-primary col-xs-12 col-md-3" id="btn-meetupconfirm">Join</button>
                     </div>
                 </div>
             </div>
@@ -129,6 +130,12 @@
     	</div> <!-- /.container -->
 
    	</div>
+
+    <div id="footer">
+          <div class="container">
+            <h1 align="center">Meetups</h1>
+          </div>
+    </div>
 
     <!-- Javascripts -->
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>

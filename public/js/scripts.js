@@ -89,6 +89,11 @@ $(document).ready(function(){
 		$(location).attr('href',"confirmation-advisor");
 	});
 
+	$("#btn-joinMeetup").click(function(){
+		event.preventDefault();
+		$(location).attr('href',"joinmeetup");
+	});	
+
 	$("#search-dict").click(function(){
 		event.preventDefault();
 		if($("#inputSearch").val()!="")
