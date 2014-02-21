@@ -1,0 +1,42 @@
+{
+	"meetup":[{
+		"id":"1",
+		"title":"Chargers Game",
+		"host":"Andriana Romero",
+		"location":"RIMAC",
+		"image":"img/chargers.jpg",
+		"date":"02/27/2014 5pm",
+		"email":"rod.silva@hotmail.com",
+		"phone":"(366) 5649-3920",
+		"people":[],
+		"active": "active"
+		
+	},
+	{
+		"id":"2",
+		"title":"I-house Cares",
+		"host":"Cristiano Faustino",
+		"location":"Great Hall",
+		"image":"img/chargers.jpg",
+		"date":"02/28/2014 2pm",
+		"email":"rod.silva@hotmail.com",
+		"phone":"(366) 5649-3920",
+		"people":[],
+		"active": ""
+		
+	},
+	{
+		"id":"3",
+		"title":"Dinner with the Mayor",
+		"host":"Megan Ring",
+		"location":"PC Balroom",
+		"image":"img/chargers.jpg",
+		"date":"03/01/2014 7pm",
+		"email":"rod.silva@hotmail.com",
+		"phone":"(366) 5649-3920",
+		"people":[],
+		"active": ""
+		
+	}]
+
+}
