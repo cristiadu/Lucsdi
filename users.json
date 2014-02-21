@@ -7,6 +7,7 @@
 		"bio":"I am a international student from Brazil",
 		"languages":"Portuguese, English",
 		"photo":"",
+		"email":"",
 		"home":"Piracicaba, Sao Paulo, Brazil",
 		"classes":[
 					{
@@ -33,6 +34,7 @@
 		"bio":"I am currently a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD.",
 		"languages":"English (Native language), Spanish (Basic proficiency)",
 		"photo":"",
+		"email":"",
 		"home":"Irvine, CA",
 		"classes":[
 					{
@@ -65,6 +67,7 @@
 		"bio":"I am a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD. ",
 		"languages":"English (Native language), Spanish (Intermediate proficiency)",
 		"photo":"",
+		"email":"",
 		"home":"Manila, Philippines",
 		"classes":[
 					{
@@ -100,6 +103,7 @@
 		"bio":"something",
 		"languages":"something",
 		"photo":"",
+		"email":"",
 		"home":"something",
 		"classes":[
 					{

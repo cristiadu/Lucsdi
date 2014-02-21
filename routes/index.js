@@ -77,6 +77,7 @@ exports.createUser = function(req, res){
 		"bio":req.param("bio"),
 		"languages":req.param("languages"),
     "photo":req.param("photo"),
+    "email":req.param("email"),
 		"home":req.param("home"),
 		"classes":classes,
 		"interests":interests

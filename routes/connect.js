@@ -1,7 +1,7 @@
 /*
  * GET home page.
  */
-
+var meetup = require('../meetups.json');
 exports.view = function(req, res){
 	if(req.session.logged == true)
   		res.render('connect');
@@ -11,7 +11,7 @@ exports.view = function(req, res){
 
 exports.meetup = function(req, res){
 	if(req.session.logged == true)
-  		res.render('meetup');
+  		res.render('meetup',meetup);
   	else
     	res.render('index');
 };
@@ -32,22 +32,49 @@ exports.tutorAdvisor = function(req, res){
 
 exports.joinmeetup = function(req, res){
 	if(req.session.logged == true)
-  		res.render('joinmeetup');
+  		res.render('joinmeetup',meetup);
   	else
     	res.render('index');
 };
 
 exports.createMeetup = function(req, res){
 	if(req.session.logged == true)
-  		res.render('meetup');
-  	else
+	{
+		meetup.meetup.push({
+			"id":meetup.meetup.length + 1,
+			"title":req.param("title"),
+			"host":req.param("host"),
+			"location":req.param("local"),
+			"image":req.param("image"),
+			"date":req.param("date"),
+			"email":req.param("email"),
+			"phone":req.param("phone"),
+			"people":[],
+			"active": ""
+			
+		});
+
+		res.render('meetup',meetup);
+	}
+	else
     	res.render('index');
 };
 
 exports.addToMeetup = function(req, res){
-	if(req.session.logged == true)
-  		res.render('meetup');
-  	else
-    	res.render('index');
+	var id = req.param("id");
+	var result = null;
+	
+	for(var v in meetup.meetup){
+		
+		if(id == meetup.meetup[v].id)
+		{
+			meetup.meetup[v].people.push({"name": req.session.user.firstname + req.session.user.lastname,
+									"email": req.session.user.email});
+			result = meetup.meetup[v];
+			break;
+		}
+	}
+
+	res.json(result);
 };
 

@@ -54,65 +54,43 @@
                 <h3 class="page-header">Join a Meetup</h3>
             	</div>
        	 	</div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12" id="msg">
+                </div>
+            </div>
+            <div class="row">
+
+            {{#each meetup}}
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="thumbnail">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <img class="img-responsive" src="{{image}}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="caption">
+                                    <h6>{{title}}</h6>
+                                    <h6 style="color:gray;">{{location}}, {{date}}</h6>
+                                    <h6 style="color:gray;">{{host}}: {{phone}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <button type="button" class="btn btn-primary col-xs-12 col-md-3 btn-meetupconfirm" id="{{id}}">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+
+        </div>
        	 </div>
 
-       	<div class="container">
-
-        <div class="row">
-
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-               	<div class="thumbnail">
-               	<a href="connect-meetupconfirm">
-                    <img class="img-responsive" src="img/ihousecares.jpg">
-                </a>
-                    <div class="caption">
-                        <h6>I-House Cares</h6>
-                        <h6 style="color:gray;">ERC Great Hall, 2/15 @ 2pm</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-               	<div class="thumbnail">
-               	<a id="btn-meetupconfirm">
-                    <img class="img-responsive" src="img/theshores.jpg">
-                </a>
-                    <div class="caption">
-                        <h6>Meet the Beach</h6>
-                        <h6 style="color:gray;">La Jolla Shores, 2/16 @ 1pm</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-               	<div class="thumbnail">
-                    <a href="connect-meetupconfirm">
-						<img class="img-responsive" src="img/gaslamp.jpg">
-					</a>
-                    <div class="caption">
-                        <h6>Dinner at Gaslamp</h6>
-                        <h6 style="color:gray;">Meet at Peterson loop, 2/21 @ 6pm</h6>
-                        <h6>45 people joined</h6>
-                        <button type="button" class="btn btn-primary col-xs-12 col-md-3" id="btn-meetupconfirm">Join</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-               	<div class="thumbnail">
-               		<a type="button" id="btn-meetupconfirm">
-                    	<img class="img-responsive" src="img/chargers.jpg">
-                	</a>
-                    <div class="caption">
-                        <h6>Chargers Game!</h6>
-                        <h6 style="color:gray;">Qualcomm Stadium, 2/22 @ 3pm</h6>
-                        <h6>35 people going</h6>
-                        <button type="button" class="btn btn-primary col-xs-12 col-md-3" id="btn-meetupconfirm">Join</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+       	
+        
 		
 <!-- 		<div class="row text-center">
 
@@ -132,8 +110,8 @@
             </div>
 
         </div> -->
-    	</div> <!-- /.container -->
-
+  
+        <div id="push"></div>
    	</div>
 
     <div id="footer">

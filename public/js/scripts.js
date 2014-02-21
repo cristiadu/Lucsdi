@@ -8,14 +8,7 @@ $(document).ready(function(){
 		},function(result){
 				if(result!=null) {
 					$(location).attr('href', "menu");
-					// $.get('myProfile/'+$("#inputSearch").val().toLowerCase(),function(result)
-					// $("#my-profile").html(result['firstname']);
-					// $("#my-profile").html(result['lastname']);
-					// $("#my-profile").html(result['bio']);
-					// $("#my-profile").html(result['languages']);
-					// $("#my-profile").html(result['home']);
-					// $("#my-profile").html(result['classes']);
-					// $("#my-profile").html(result['interests']);
+
 				}
 				else
 					$("#error").html("<small class='red'>username or password incorrect</small>");
@@ -85,9 +78,17 @@ $(document).ready(function(){
 		$(location).attr('href',"connect");
 	});
 
-	$("#btn-meetupconfirm").click(function(){
+	$(".btn-meetupconfirm").click(function(){
 		event.preventDefault();
-		$(location).attr('href',"connect-meetupconfirm");
+		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
+			if(result!=null) {
+					$("#msg").addClass('alert').addClass('alert-success').text("You were added to the meetup!");
+				}
+				else
+					$("#msg").addClass('alert').addClass('alert-danger').text("Error trying to add you to the meetup!");
+				
+			
+		});
 	});
 
 	$("#btn-confirmAdvisor").click(function(){
