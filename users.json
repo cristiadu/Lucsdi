@@ -39,7 +39,17 @@
 						"name":"VIS 124BN"
 					}
 					],
-		"interests":[{},{}]
+		"interests":[
+					{
+						"name":"Contemporary Dance"
+					},
+					{
+						"name":"Reading"
+					},
+					{
+						"name":"Baking for the homeless"	
+					}
+					]
 	},
 	{
 		"username":"andie",
