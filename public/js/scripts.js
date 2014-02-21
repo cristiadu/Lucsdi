@@ -8,6 +8,7 @@ $(document).ready(function(){
 		},function(result){
 				if(result!=null) {
 					$(location).attr('href', "myProfile");
+					$.get('myProfile/'+$("#inputSearch").val().toLowerCase(),function(result)
 					$("#my-profile").html(result['firstname']);
 					$("#my-profile").html(result['lastname']);
 					$("#my-profile").html(result['bio']);

@@ -9,7 +9,8 @@ exports.view = function(req, res) {
 
 exports.myProfile = function(req, res) {
 
-	var name = null; 
+	var username = null; 
+	var password = null;
 	console.log(); 
 	for(var u in users){
 	    if (users[u].username == req.params.username) {
