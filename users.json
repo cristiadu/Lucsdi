@@ -44,17 +44,40 @@
 	{
 		"username":"andie",
 		"password":"789",
-		"firstname":"something",
-		"lastname":"something",
-		"bio":"something",
-		"languages":"something",
-		"home":"something",
-		"classes":[{},{}],
-		"interests":[{},{}]
+		"firstname":"Andriana",
+		"lastname":"Beltran Romero",
+		"bio":"I am a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD. ",
+		"languages":"English (Native language), Spanish (Intermediate proficiency)",
+		"home":"Manila, Philippines",
+		"classes":[
+					{
+						"name":"COGS 120"
+					},
+					{
+						"name":"COGS 14B"
+					},
+					{
+						"name":"CSE 8B"
+					},
+					{
+						"name":"VIS 126I"
+					}
+					],
+		"interests":[
+					{
+						"name":"Music"
+					},
+					{
+						"name":"Sustainability"
+					},
+					{
+						"name":"Competitive Eating"
+					}
+					]
 	},
 	{
-		"username":"something",
-		"password":"something",
+		"username":"newuser",
+		"password":"password",
 		"firstname":"something",
 		"lastname":"something",
 		"bio":"something",
