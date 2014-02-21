@@ -7,15 +7,15 @@ $(document).ready(function(){
 			'password': $("#password").val()
 		},function(result){
 				if(result!=null) {
-					$(location).attr('href', "myProfile");
-					$.get('myProfile/'+$("#inputSearch").val().toLowerCase(),function(result)
-					$("#my-profile").html(result['firstname']);
-					$("#my-profile").html(result['lastname']);
-					$("#my-profile").html(result['bio']);
-					$("#my-profile").html(result['languages']);
-					$("#my-profile").html(result['home']);
-					$("#my-profile").html(result['classes']);
-					$("#my-profile").html(result['interests']);
+					$(location).attr('href', "menu");
+					// $.get('myProfile/'+$("#inputSearch").val().toLowerCase(),function(result)
+					// $("#my-profile").html(result['firstname']);
+					// $("#my-profile").html(result['lastname']);
+					// $("#my-profile").html(result['bio']);
+					// $("#my-profile").html(result['languages']);
+					// $("#my-profile").html(result['home']);
+					// $("#my-profile").html(result['classes']);
+					// $("#my-profile").html(result['interests']);
 				}
 				else
 					$("#error").html("<small class='red'>username or password incorrect</small>");
