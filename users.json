@@ -95,12 +95,12 @@
 	{
 		"username":"newuser",
 		"password":"password",
-		"firstname":"something",
-		"lastname":"something",
-		"bio":"something",
-		"languages":"something",
+		"firstname":"New",
+		"lastname":"User",
+		"bio":"A short bio about yourself.",
+		"languages":"English",
 		"photo":"",
-		"home":"something",
+		"home":"Your hometown",
 		"classes":[
 					{
 						"name":"COGS 120"
