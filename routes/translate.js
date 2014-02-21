@@ -4,11 +4,14 @@
 var dictionary = require('../dictionary.json');
 
 exports.view = function(req, res){
-  res.render('translate');
+	if(req.session.logged == true)
+  		res.render('translate');
+  	else
+    	res.render('index');
 };
 
 exports.searchDict = function(req, res){
-
+	if(req.session.logged == true)
 	var answer = null;
 	console.log("eita");
 	for(var v in dictionary){

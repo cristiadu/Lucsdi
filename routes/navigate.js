@@ -3,6 +3,9 @@
  */
 
 exports.view = function(req, res){
-  res.render('navigate');
+	if(req.session.logged == true)
+  		res.render('navigate');
+  	else
+  		res.render('index');
 };
 

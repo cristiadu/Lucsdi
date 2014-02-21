@@ -2,11 +2,12 @@
 	{
 		"username":"cristiano",
 		"password":"123",
-		"firstname":"something",
-		"lastname":"something",
-		"bio":"something",
-		"languages":"something",
-		"home":"something",
+		"firstname":"Cristiano",
+		"lastname":"Faustino",
+		"bio":"I am a international student from Brazil",
+		"languages":"Portuguese, English",
+		"photo":"",
+		"home":"Piracicaba, Sao Paulo, Brazil",
 		"classes":[
 					{
 						"name":"COGS 120"
@@ -15,7 +16,14 @@
 						"name":"COGS 118A"
 					}
 					],
-		"interests":[{},{}]
+		"interests":[
+						{
+							"name":"Soccer"
+					  	},
+					  	{
+					  		"name": "Beer"
+					  	}
+					]
 	},
 	{
 		"username":"megan",
@@ -24,6 +32,7 @@
 		"lastname":"Ring",
 		"bio":"I am currently a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD.",
 		"languages":"English (Native language), Spanish (Basic proficiency)",
+		"photo":"",
 		"home":"Irvine, CA",
 		"classes":[
 					{
@@ -39,7 +48,14 @@
 						"name":"VIS 124BN"
 					}
 					],
-		"interests":[{},{}]
+		"interests":[
+						{
+							"name":"TV"
+					  	},
+					  	{
+					  		"name": "Cognitive Science"
+					  	}
+					]
 	},
 	{
 		"username":"andie",
@@ -48,6 +64,7 @@
 		"lastname":"Beltran Romero",
 		"bio":"I am a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD. ",
 		"languages":"English (Native language), Spanish (Intermediate proficiency)",
+		"photo":"",
 		"home":"Manila, Philippines",
 		"classes":[
 					{
@@ -82,8 +99,29 @@
 		"lastname":"something",
 		"bio":"something",
 		"languages":"something",
+		"photo":"",
 		"home":"something",
-		"classes":[{},{}],
-		"interests":[{},{}]
+		"classes":[
+					{
+						"name":"COGS 120"
+					},
+					{
+						"name":"COGS 14B"
+					},
+					{
+						"name":"CSE 8B"
+					},
+					{
+						"name":"VIS 126I"
+					}
+					],
+		"interests":[
+						{
+							"name":"Soccer"
+					  	},
+					  	{
+					  		"name": "Beer"
+					  	}
+					]
 	}
 ]

@@ -3,6 +3,9 @@
  */
 
 exports.view = function(req, res){
-  res.render('plan');
+	if(req.session.logged == true)
+  		res.render('plan');
+  	else
+    	res.render('index');
 };
 

@@ -39,7 +39,7 @@
         </div>
 
         <div class="meganandiecover">
-                    <img class="img-thumbnail h-img" src="img/meganandie.jpg" align="middle" />
+                    <img class="img-thumbnail h-img" src="{{photo}}" align="middle" />
                
         </div>
 
@@ -54,28 +54,25 @@
             
             <div class="row">
                 <div class="col-xs-12 col-md-12 section">
-                    <h1 class="section-heading">Megan Ring</h1>
+                    <h1 class="section-heading">{{firstname}} {{lastname}}</h1>
                     <br>
-                    <p class="lead section-lead">I am a second year Cognitive Science major with a specialization in Human Computer Interaction and minor in Computer Science at UC San Diego. I like long walks on the beach and One Direction.</p>
-                    <p class="lead section-lead">Languages: English (Native Proficiency), Spanish (Basic Proficiency)</p>
-                    <p class="lead section-lead">Hometown/Country: Irvine, CA</p>
+                    <p class="lead section-lead">{{bio}}</p>
+                    <p class="lead section-lead">Languages: {{languages}}</p>
+                    <p class="lead section-lead">Hometown/Country: {{home}}</p>
 
                 
                     <h2>Current Classes</h2> 
                     <ul>       
-                        <li>MMW 14</li>                 
-                        <li>Cogs 120</li>               
-                        <li>CSE 21</li>              
-                        <li>Vis 124BN</li>              
+                        {{#each classes}}
+                            <li>{{name}}</li>
+                        {{/each}}                             
                     </ul>
                     
                     <h2>Interests</h2>
                     <ul>
-                        <li>Contemporary Dance</li>
-                        <li>Sustainable energy</li>
-                        <li>Eating</li>
-                        <li>One Direction</li>
-                        <li>Baking for the homeless</li>
+                        {{#each interests}}
+                            <li>{{name}}</li>
+                        {{/each}}   
                     </ul>
                 </div>
             </div>

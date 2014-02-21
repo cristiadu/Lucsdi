@@ -13,6 +13,8 @@ exports.login = function(req, res){
 
 	    if (users[v].username == req.param("username") && users[v].password == req.param("password")) {
 	        answer = users[v];
+          req.session.logged = true;
+          req.session.user = users[v];
 
 	    }
 	}
@@ -20,7 +22,10 @@ exports.login = function(req, res){
 };
 
 exports.menu = function(req, res){
-  res.render('menu');
+  if(req.session.logged == true)
+    res.render('menu');
+  else
+    res.render('index');
 };
 
 exports.about = function(req, res){
@@ -32,7 +37,12 @@ exports.help = function(req, res){
 };
 
 exports.myProfile = function(req, res){
-  res.render('myProfile');
+
+  console.log(req.session.user);
+  if(req.session.logged == true)
+    res.render('myProfile',req.session.user);
+  else
+    res.render('index');
 };
 
 exports.signup = function(req, res){
@@ -66,14 +76,18 @@ exports.createUser = function(req, res){
 		"lastname":req.param("lastname"),
 		"bio":req.param("bio"),
 		"languages":req.param("languages"),
+    "photo":req.param("photo"),
 		"home":req.param("home"),
 		"classes":classes,
 		"interests":interests
   });
+  console.log(users);
 
   res.render('index');
 };
 
 exports.logout = function(req, res){
+  req.session.logged = false;
+  req.session.user = null;
   res.render('logout');
 };

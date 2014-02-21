@@ -63,10 +63,7 @@ $(document).ready(function(){
 		$(location).attr('href', "logout");
 	});
 
-	$("#btn-enter").click(function(){
-		event.preventDefault();
-		$(location).attr('href',"menu");
-	});
+
 
 	$("#btn-nav").click(function(){
 		event.preventDefault();
