@@ -28,8 +28,8 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-app.use(express.cookieParser('Intro HCI secret key'));
-app.use(express.session());
+app.use(express.cookieParser());
+app.use(express.session({secret: 'this is the secret'}));  
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -39,6 +39,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
+
+// General routes
 app.get('/', index.view);
 app.get('/menu', index.menu);
 app.get('/about', index.about);
@@ -48,12 +50,21 @@ app.get('/signup', index.signup);
 app.post('/confirmSignUp', index.createUser);
 app.post('/login', index.login);
 app.get('/logout', index.logout);
+
+// Connect routes
 app.get('/connect', connect.view);
 app.get('/meetup', connect.meetup);
+app.post('/newmeetup', connect.createMeetup);
+app.get('/joinmeetup', connect.joinmeetup);
+app.post('/confirmJoin', connect.addToMeetup);
 app.get('/clubsOrg', connect.clubsOrg);
 app.get('/tutorAdvisor', connect.tutorAdvisor);
+
+// Navigate and Plan routes
 app.get('/navigate', navigate.view);
 app.get('/plan', plan.view);
+
+// Translate routes
 app.get('/translate', translate.view);
 app.get('/searchDict/:word', translate.searchDict);
 
