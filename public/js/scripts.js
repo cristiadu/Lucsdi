@@ -96,9 +96,9 @@ $(document).ready(function(){
 		$(location).attr('href',"confirmation-advisor");
 	});
 
-	$("#btn-submitMeetup").click(function(){
+	$("#btn-joinMeetup").click(function(){
 		event.preventDefault();
-		$(location).attr('href',"submitmeetup");
+		$(location).attr('href',"joinmeetup");
 	});	
 
 	$("#search-dict").click(function(){
