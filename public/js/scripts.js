@@ -78,7 +78,7 @@ $(document).ready(function(){
 		$(location).attr('href',"connect");
 	});
 
-	$(".btn-meetupconfirm").click(function(){
+	$(".btn-joinmeetupconfirm").click(function(){
 		event.preventDefault();
 		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
 			if(result!=null) {
@@ -96,9 +96,9 @@ $(document).ready(function(){
 		$(location).attr('href',"confirmation-advisor");
 	});
 
-	$("#btn-joinMeetup").click(function(){
+	$("#btn-submitMeetup").click(function(){
 		event.preventDefault();
-		$(location).attr('href',"joinmeetup");
+		$(location).attr('href',"submitmeetup");
 	});	
 
 	$("#search-dict").click(function(){
