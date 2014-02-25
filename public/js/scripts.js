@@ -56,7 +56,10 @@ $(document).ready(function(){
 		$(location).attr('href', "logout");
 	});
 
-
+	$("#btn-mymeetups").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "mymeetups");
+	});
 
 	$("#btn-nav").click(function(){
 		event.preventDefault();
