@@ -82,7 +82,7 @@ $(document).ready(function(){
 		event.preventDefault();
 		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
 			if(result!=null) {
-					$("#msg").addClass('alert').addClass('alert-success').text("You were added to the meetup!");
+					$("#msg").addClass('alert').addClass('alert-success').text("You were added to the" + {{title}} + "meetup!");
 				}
 				else
 					$("#msg").addClass('alert').addClass('alert-danger').text("Error trying to add you to the meetup!");
