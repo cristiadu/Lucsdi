@@ -47,6 +47,7 @@ app.get('/menu', index.menu);
 app.get('/about', index.about);
 app.get('/help', index.help);
 app.get('/myProfile', index.myProfile);
+app.get('/mymeetups', index.mymeetups);
 app.get('/signup', index.signup);
 app.post('/confirmSignUp', index.createUser);
 app.post('/login', index.login);
@@ -60,6 +61,9 @@ app.get('/joinmeetup', connect.joinmeetup);
 app.post('/confirmJoin', connect.addToMeetup);
 app.get('/clubsOrg', connect.clubsOrg);
 app.get('/tutorAdvisor', connect.tutorAdvisor);
+//app.get('/meetupconfirm', connect.meetupconfirm);
+app.get('/confirmation-advisor', connect.confirmation-advisor);
+// app.get('/confirmation-tutor', connect.confirm);
 
 // Navigate and Plan routes
 app.get('/navigate', navigate.view);

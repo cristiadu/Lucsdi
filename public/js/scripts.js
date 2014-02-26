@@ -56,7 +56,10 @@ $(document).ready(function(){
 		$(location).attr('href', "logout");
 	});
 
-
+	$("#btn-mymeetups").click(function(){
+		event.preventDefault();
+		$(location).attr('href', "mymeetups");
+	});
 
 	$("#btn-nav").click(function(){
 		event.preventDefault();
@@ -78,7 +81,7 @@ $(document).ready(function(){
 		$(location).attr('href',"connect");
 	});
 
-	$(".btn-meetupconfirm").click(function(){
+	$(".btn-joinmeetupconfirm").click(function(){
 		event.preventDefault();
 		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
 			if(result!=null) {
