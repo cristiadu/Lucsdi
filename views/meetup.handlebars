@@ -47,20 +47,18 @@
 
 
     <div id="content-minor" class="container">
-        
-        {{#if created}}
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <br>
-                <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></span>
-            </div>
-        </div> 
-        {{/if}}
-
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <br>
+                {{#if created}}
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <br>
+                            <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></span>
+                        </div>
+                    </div> 
+                {{/if}}
                 <h3 class="page-header">Join a Meetup</h3>
             </div>
         </div>
