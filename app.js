@@ -33,6 +33,7 @@ app.use(express.session({secret: 'this is the secret'}));
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -60,8 +61,11 @@ app.get('/joinmeetup', connect.joinmeetup);
 app.post('/confirmJoin', connect.addToMeetup);
 app.get('/clubsOrg', connect.clubsOrg);
 app.get('/tutorAdvisor', connect.tutorAdvisor);
-//app.get('/meetupconfirm', connect.meetupconfirm);
+
 //app.get('/confirmation-advisor', connect.confirmation-advisor);
+
+app.get('/confirmation-advisor', connect.confirmationAdvisor);
+
 // app.get('/confirmation-tutor', connect.confirm);
 
 // Navigate and Plan routes

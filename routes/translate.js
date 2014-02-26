@@ -13,7 +13,7 @@ exports.view = function(req, res){
 exports.searchDict = function(req, res){
 	if(req.session.logged == true)
 	var answer = null;
-	console.log("eita");
+
 	for(var v in dictionary){
 	    if (dictionary[v].name == req.params.word) {
 	        answer = dictionary[v];

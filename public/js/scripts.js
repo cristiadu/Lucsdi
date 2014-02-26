@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 				}
 				else
-					$("#error").html("<small class='red'>username or password incorrect</small>");
+					$("#error").html("<small class='alert alert-danger'>username or password incorrect</small>");
 			
 			});
 	});
@@ -85,7 +85,7 @@ $(document).ready(function(){
 		event.preventDefault();
 		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
 			if(result!=null) {
-					$("#msg").addClass('alert').addClass('alert-success').text("You were added to the meetup!");
+					$("#msg").addClass('alert').addClass('alert-success').addClass('alert-dismissable').text("You were added to the meetup "+result['title']+"!");
 				}
 				else
 					$("#msg").addClass('alert').addClass('alert-danger').text("Error trying to add you to the meetup!");
