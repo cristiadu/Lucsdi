@@ -56,6 +56,10 @@ body { top: 0px !important; }
   color:red;
 }
 
+.well{
+  background-color: rgb(255, 192, 203);
+}
+
 .dict-page{
   background-size: cover;
   background-position: center;
