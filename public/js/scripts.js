@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 				}
 				else
-					$("#error").html("<small class='alert alert-danger'>username or password incorrect</small>");
+					$("#error").html("<span class='alert alert-danger alert-dismissable col-xs-12 col-md-12'>username or password incorrect</small>");
 			
 			});
 	});
