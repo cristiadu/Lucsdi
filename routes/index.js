@@ -45,6 +45,15 @@ exports.myProfile = function(req, res){
     res.render('index');
 };
 
+exports.mymeetups = function(req, res){
+
+  console.log(req.session.user);
+  if(req.session.logged == true)
+    res.render('mymeetups',req.session.user);
+  else
+    res.render('index');
+};
+
 exports.signup = function(req, res){
   res.render('signup');
 };
