@@ -60,7 +60,7 @@ app.get('/joinmeetup', connect.joinmeetup);
 app.post('/confirmJoin', connect.addToMeetup);
 app.get('/clubsOrg', connect.clubsOrg);
 app.get('/tutorAdvisor', connect.tutorAdvisor);
-//app.get('/meetupconfirm', connect.meetupconfirm);
+app.get('/meetupconfirm', connect.meetupconfirm);
 // app.get('/confirmation-advisor', connect.confirmation-advisor);
 // app.get('/confirmation-tutor', connect.confirm);
 
