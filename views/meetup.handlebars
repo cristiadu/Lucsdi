@@ -53,6 +53,16 @@
                 <h3 class="page-header">Join a Meetup</h3>
             </div>
         </div>
+
+        {{#if created}}
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <br>
+                <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></span>
+            </div>
+        </div> 
+        {{/if}}
        
         <div class="row">
             <div class="col-md-12 col-xs-12">
@@ -91,14 +101,17 @@
                 <h3 class="page-header">Start a Meetup</h3>
             </div>
         </div>
-          {{#if created}}
+
+        <!-- {{#if created}}
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <br>
-                <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!</span>
+                <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></span>
             </div>
         </div> 
-        {{/if}}
+        {{/if}} -->
+
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <form role="form" action="newmeetup" method="post">
@@ -143,7 +156,7 @@
 </div>
 <div id="footer">
           <div class="container">
-            <h1 align="center">Students</h1>
+            <h1 align="center">Meetups</h1>
           </div>
 </div>   
 
