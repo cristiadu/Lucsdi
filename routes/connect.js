@@ -11,7 +11,7 @@ exports.view = function(req, res){
 
 exports.meetup = function(req, res){
 	if(req.session.logged == true)
-  		res.render('meetup',meetup);
+  		res.render('meetup',{"meetups": meetup});
   	else
     	res.render('index');
 };
@@ -37,12 +37,12 @@ exports.tutorAdvisor = function(req, res){
     	res.render('index');
 };
 
-// exports.confirmation-tutor = function(req, res){
-// 	if(req.session.logged == true)
-//   		res.render('confirm');
-//   	else
-//     	res.render('index');
-//};
+ exports.confirmationAdvisor = function(req, res){
+ 	if(req.session.logged == true)
+  		res.render('confirm');
+  	else
+    	res.render('index');
+};
 
 exports.joinmeetup = function(req, res){
 	if(req.session.logged == true)
@@ -68,7 +68,7 @@ exports.createMeetup = function(req, res){
 			
 		});
 
-		res.render('meetup',meetup);
+		res.render('meetup',{"created":"true", "meetups": meetup});
 	}
 	else
     	res.render('index');
@@ -82,8 +82,7 @@ exports.addToMeetup = function(req, res){
 		
 		if(id == meetup.meetup[v].id)
 		{
-			meetup.meetup[v].people.push({"name": req.session.user.firstname + req.session.user.lastname,
-									"email": req.session.user.email});
+			meetup.meetup[v].people.push({"user": req.session.user});
 			result = meetup.meetup[v];
 			break;
 		}

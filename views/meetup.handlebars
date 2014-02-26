@@ -52,12 +52,13 @@
                 <br>
                 <h3 class="page-header">Join a Meetup</h3>
             </div>
-        </div> 
+        </div>
+       
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        {{#each meetup}}
+                        {{#each meetups.meetup}}
                         <div class="item {{active}}">
                             <img class="slide-image" src="{{image}}" alt="">
                             <div class="carousel-caption">
@@ -84,12 +85,20 @@
                 <a class="btn btn-primary col-md-3 col-xs-12" id="btn-joinMeetup">Find More Meetups!</a>
             </div>
         </div>
-
+       
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <h3 class="page-header">Start a Meetup</h3>
             </div>
         </div>
+          {{#if created}}
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <br>
+                <span class="alert alert-success alert-dismissable col-xs-12 col-md-12">Meetup sucessifully created!</span>
+            </div>
+        </div> 
+        {{/if}}
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <form role="form" action="newmeetup" method="post">
@@ -122,7 +131,7 @@
                     <input type="text" class="form-control" id="image" name="image" placeholder="i.e. https://rimacfield.jpg">
                   </div>
 
-                  <a class="btn btn-primary col-md-3 col-xs-12" id="btn-meetupconfirm">Submit</a>
+                  <input type="submit" class="btn btn-primary col-md-3 col-xs-12" value="Submit">
                  
 
                 </form>
