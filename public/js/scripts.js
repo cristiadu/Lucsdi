@@ -137,3 +137,9 @@ function toggleElement(id)
         document.getElementById(id).style.display = 'none';
     }
 }
+
+function confirmPopup()
+{
+	alert("You have successfully requested an appointment with a tutor! You will receive appointment confirmation via email within the next week when the tutor has confirmed your availability.");
+	
+}
