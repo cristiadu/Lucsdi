@@ -30,14 +30,14 @@ exports.tutorAdvisor = function(req, res){
     	res.render('index');
 };
 
-exports.confirmationadvisor = function(req, res){
+exports.confirmation-advisor = function(req, res){
 	if(req.session.logged == true)
   		res.render('confirmation-advisor');
   	else
     	res.render('index');
 };
 
-exports.confirmationtutor = function(req, res){
+exports.confirmation-tutor = function(req, res){
 	if(req.session.logged == true)
   		res.render('confirm');
   	else
