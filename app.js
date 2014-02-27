@@ -47,6 +47,7 @@ app.get('/menu', index.menu);
 app.get('/about', index.about);
 app.get('/help', index.help);
 app.get('/myProfile', index.myProfile);
+app.get('/profile/:user',index.viewProfile)
 app.get('/mymeetups', index.mymeetups);
 app.get('/signup', index.signup);
 app.post('/confirmSignUp', index.createUser);

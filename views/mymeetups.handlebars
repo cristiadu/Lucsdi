@@ -44,58 +44,69 @@
             	<!-- /.container -->
         	</div>
             <div class="container" id="content-minor">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Created</h3></div>
-                </div>
-                {{#each myCreated}}
+                {{#if myCreated}}
                     <div class="row">
-                        
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                            <h3 class="panel-title">{{title}}</h3>
-                            </div>
-                                <div class="panel-body">
-                                <h6 style="color:gray;">{{location}}, {{date}}</h6>
-                                <h6 style="color:gray;">{{host}}: {{phone}}</h6>
-                                <a href="javascript:toggleElement('{{id}}')">People who joined</a>
-                                <div id="{{id}}" style="display:none">
-                                    {{#each people}}
-                                        <p>{{firstname}} {{lastname}}</p>
-                                    {{/each}}
-                                </div>
-                            </div>
-                            <a class="navbar-brand" href="menu"><span class="glyphicon glyphicon-home"></span></a>
-                        </div>
-                        
+                        <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Created</h3></div>
                     </div>
-                {{/each}}   
-                <div class="row">
-                    <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Joined</h3></div>
-                {{#each myJoined}}
-                    <div class="row">
-                        
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                            <h3 class="panel-title">{{title}}</h3>
-                            </div>
-                                <div class="panel-body">
-                                <h6 style="color:gray;">{{location}}, {{date}}</h6>
-                                <h6 style="color:gray;">{{host}}: {{phone}}</h6>
-                                <a href="javascript:toggleElement('{{id}}')">People who joined</a>
-                                <div id="{{id}}" style="display:none">
-                                    {{#each people}}
-                                        <p>{{firstname}} {{lastname}}</ p>
-                                    {{/each}}
+                    {{#each myCreated}}
+                        <div class="row">
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">{{title}}</h3>
+                                </div>
+                                    <div class="panel-body">
+                                    <h6 style="color:gray;">{{location}}, {{date}}</h6>
+                                    <h6 style="color:gray;">{{host}}: {{phone}}</h6>
+                                    <a class="btn btn-success" href="javascript:toggleElement('{{id}}')">People who joined</a>
+                                    <div id="{{id}}" style="display:none">
+                                        <br>
+                                        <small><em>Click to view profile</em></small>
+                                        <br>
+                                        {{#each people}}
+                                            <a href="profile/{{username}}">{{firstname}} {{lastname}}</a><br>
+                                        {{/each}}
+                                    </div>
                                 </div>
 
-                                </div>  
+                            </div>
+                            
                         </div>
-                        
+                    {{/each}}
+                {{/if}}
+                {{#if myJoined}}   
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Joined</h3></div>
                     </div>
-                {{/each}}
-                
-            </div>
+                    {{#each myJoined}}
+                      <div class="row">
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">{{title}}</h3>
+                                </div>
+                                    <div class="panel-body">
+                                    <h6 style="color:gray;">{{location}}, {{date}}</h6>
+                                    <h6 style="color:gray;">{{host}}: {{phone}}</h6>
+                                    <a class="btn btn-success" href="javascript:toggleElement('{{id}}')">People who joined</a>
+                                    <div id="{{id}}" style="display:none">
+                                        <br>
+                                        <small><em>Click to view profile</em></small>
+                                        <br>
+                                        {{#each people}}
+                                            <a href="profile/{{username}}">{{firstname}} {{lastname}}</a><br>
+                                        {{/each}}
+                                    </div>
+                                </div>
 
+                            </div>
+                            
+                        </div>
+                    {{/each}}
+
+                {{/if}}
+            
+</div>
 
         <div id="push"></div>
         </div>

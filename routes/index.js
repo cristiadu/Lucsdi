@@ -7,6 +7,21 @@ exports.view = function(req, res){
   res.render('index');
 };
 
+exports.viewProfile = function(req, res){
+if(req.session.logged == true){
+  for(var v in users){
+
+      if (users[v].username == req.params.user) {
+          answer = users[v];
+
+      }
+  }
+  res.render('profile',answer);
+}
+else
+  res.render('index');
+};
+
 exports.login = function(req, res){
   	var answer = null;
 
@@ -70,7 +85,15 @@ exports.mymeetups = function(req, res){
       }
     }
     
-    res.render('mymeetups',{"myCreated":myCreated,"myJoined":myJoined});
+    if(myCreated.length > 0 && myJoined.length>0)
+      res.render('mymeetups',{"myCreated":myCreated,"myJoined":myJoined});
+    else if(myCreated.length>0)
+      res.render('mymeetups',{"myCreated":myCreated});
+    else if(myJoined.length>0)
+      res.render('mymeetups',{"myJoined":myJoined});
+    else
+      res.render('mymeetups');
+
   }
   else
     res.render('index');
