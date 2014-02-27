@@ -88,6 +88,7 @@ $(document).ready(function(){
 		$.post('confirmJoin',{"id":$(this).attr("id")},function(result){
 			if(result!=null) {
 					$("#msg").addClass('alert').addClass('alert-success').addClass('alert-dismissable').text("You were added to the meetup "+result['title']+"!");
+					// $(this).after('<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>You were added to the meetup')
 				}
 				else
 					$("#msg").addClass('alert').addClass('alert-danger').text("Error trying to add you to the meetup!");
@@ -96,7 +97,9 @@ $(document).ready(function(){
 		});
 	});
 
+
 	$("#btn-scheduleAdvisor").click(function(){
+
 		event.preventDefault();
 		$(location).attr('href',"confirmationAdvisor");
 	});
