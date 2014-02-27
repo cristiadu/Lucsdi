@@ -2,6 +2,7 @@
  * GET home page.
  */
 var users = require('../users.json');
+var meetups = require('../meetups.json');
 exports.view = function(req, res){
   res.render('index');
 };
@@ -48,8 +49,29 @@ exports.myProfile = function(req, res){
 exports.mymeetups = function(req, res){
 
   console.log(req.session.user);
+
   if(req.session.logged == true)
-    res.render('mymeetups',req.session.user);
+  {
+    var myCreated = [];
+    var myJoined = [];
+
+    for(var v in meetups.meetup)
+    {
+      if(req.session.user.username == meetups.meetup[v].createdBy)
+         myCreated.push(meetups.meetup[v]);
+      else
+      {
+        for(var x in meetups.meetup[v].people)
+        {
+          
+          if(req.session.user.username == meetups.meetup[v].people[x].username)
+            myJoined.push(meetups.meetup[v]);
+        }
+      }
+    }
+    
+    res.render('mymeetups',{"myCreated":myCreated,"myJoined":myJoined});
+  }
   else
     res.render('index');
 };

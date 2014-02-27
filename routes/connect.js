@@ -63,10 +63,12 @@ exports.createMeetup = function(req, res){
 			"email":req.param("email"),
 			"phone":req.param("phone"),
 			"people":[],
-			"active": ""
+			"active": "",
+			"created by": req.session.user.username
 			
 		});
 
+		
 		res.render('meetup',{"created":"true", "meetups": meetup});
 	}
 	else
@@ -81,8 +83,10 @@ exports.addToMeetup = function(req, res){
 		
 		if(id == meetup.meetup[v].id)
 		{
-			meetup.meetup[v].people.push({"user": req.session.user});
+			meetup.meetup[v].people.push(req.session.user);
+
 			result = meetup.meetup[v];
+
 			break;
 		}
 	}

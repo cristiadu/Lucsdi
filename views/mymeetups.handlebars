@@ -5,9 +5,7 @@
 			<link rel="stylesheet" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>My Meetups</title>
-            <script>
-            $('#example').tooltip(options)
-            </script>
+        
 	</head>
 
 	<body>
@@ -45,19 +43,57 @@
             	</div>
             	<!-- /.container -->
         	</div>
-
-            <div class="row">
-                {{#each meetups.meetup}}
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                    <h3 class="panel-title">{{title}}</h3>
-                    </div>
-                        <div class="panel-body">
-                        <h6 style="color:gray;">{{Location}}, {{date}}</h6>
-                        <h6 style="color:gray;">{{host}}: {{phone}}</h6>
-                        </div>
+            <div class="container" id="content-minor">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Created</h3></div>
                 </div>
+                {{#each myCreated}}
+                    <div class="row">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                            <h3 class="panel-title">{{title}}</h3>
+                            </div>
+                                <div class="panel-body">
+                                <h6 style="color:gray;">{{location}}, {{date}}</h6>
+                                <h6 style="color:gray;">{{host}}: {{phone}}</h6>
+                                <a href="javascript:toggleElement('{{id}}')">People who joined</a>
+                                <div id="{{id}}" style="display:none">
+                                    {{#each people}}
+                                        <p>{{firstname}} {{lastname}}</p>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {{/each}}   
+                <div class="row">
+                    <div class="col-xs-12 col-md-12"><h3 class="page-header">Meetups Joined</h3></div>
+                </div>
+                {{#each myJoined}}
+                    <div class="row">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                            <h3 class="panel-title">{{title}}</h3>
+                            </div>
+                                <div class="panel-body">
+                                <h6 style="color:gray;">{{location}}, {{date}}</h6>
+                                <h6 style="color:gray;">{{host}}: {{phone}}</h6>
+                                <a href="javascript:toggleElement('{{id}}')">People who joined</a>
+                                <div id="{{id}}" style="display:none">
+                                    {{#each people}}
+                                        <p>{{firstname}} {{lastname}}</ p>
+                                    {{/each}}
+                                </div>
+
+                                </div>  
+                        </div>
+                        
+                    </div>
                 {{/each}}
+                
             </div>
 
 
