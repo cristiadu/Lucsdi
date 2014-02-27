@@ -93,7 +93,7 @@ exports.createUser = function(req, res){
   });
   console.log(users);
 
-  res.render('index');
+  res.render('index',{"created":"true"});
 };
 
 exports.logout = function(req, res){
