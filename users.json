@@ -6,7 +6,7 @@
 		"lastname":"Faustino",
 		"bio":"I am a international student from Brazil",
 		"languages":"Portuguese, English",
-		"photo":"",
+		"photo":"img/brazil.jpg",
 		"email":"",
 		"home":"Piracicaba, Sao Paulo, Brazil",
 		"classes":[
@@ -68,7 +68,7 @@
 		"lastname":"Beltran Romero",
 		"bio":"I am a second year Cognitive Science (HCI) major and a Computer Science minor at UCSD. ",
 		"languages":"English (Native language), Spanish (Intermediate proficiency)",
-		"photo":"",
+		"photo":"img/meganandie.jpg",
 		"email":"",
 		"home":"Manila, Philippines",
 		"classes":[
