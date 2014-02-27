@@ -11,7 +11,9 @@ $(document).ready(function(){
 
 				}
 				else
-					$("#error").html("<span class='alert alert-danger alert-dismissable col-xs-12 col-md-12'>username or password incorrect</small>");
+					$("#error").html('<span class="alert alert-danger alert-dismissable col-xs-12 col-md-12"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'+
+							"Username or password incorrect!</span>");
+					
 			
 			});
 	});
@@ -94,9 +96,14 @@ $(document).ready(function(){
 		});
 	});
 
-	$("#btn-confirmAdvisor").click(function(){
+	$("#btn-scheduleAdvisor").click(function(){
 		event.preventDefault();
-		$(location).attr('href',"confirmation-advisor");
+		$(location).attr('href',"confirmationAdvisor");
+	});
+
+	$("#btn-scheduleTutor").click(function(){
+		event.preventDefault();
+		$(location).attr('href',"confirmationAdvisor");
 	});
 
 	$("#btn-joinMeetup").click(function(){

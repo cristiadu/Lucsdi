@@ -64,7 +64,7 @@ app.get('/tutorAdvisor', connect.tutorAdvisor);
 
 //app.get('/confirmation-advisor', connect.confirmation-advisor);
 
-app.get('/confirmation-advisor', connect.confirmationAdvisor);
+app.get('/confirmationAdvisor', connect.confirmationAdvisor);
 
 // app.get('/confirmation-tutor', connect.confirm);
 
