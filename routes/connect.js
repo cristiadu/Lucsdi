@@ -9,6 +9,13 @@ exports.view = function(req, res){
     	res.render('index');
 };
 
+exports.viewTest = function(req, res){
+	if(req.session.logged == true)
+  		res.render('connectTest');
+  	else
+    	res.render('index');
+};
+
 exports.meetup = function(req, res){
 	if(req.session.logged == true)
   		res.render('meetup',{"meetups": meetup});
