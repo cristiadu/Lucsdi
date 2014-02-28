@@ -27,6 +27,14 @@ body { top: 0px !important; }
   max-height:30%;
 
 }
+.maxheight-carrousel1{
+  max-height: 25%;
+}
+
+.maxheight-carrousel2{
+  max-height: 40%;
+}
+
 
 .navbar2 {
 	position: static;
