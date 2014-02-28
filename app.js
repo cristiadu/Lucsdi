@@ -56,6 +56,7 @@ app.get('/logout', index.logout);
 
 // Connect routes
 app.get('/connect', connect.view);
+app.get('/connectTest', connect.viewTest);
 app.get('/meetup', connect.meetup);
 app.post('/newmeetup', connect.createMeetup);
 app.get('/joinmeetup', connect.joinmeetup);
