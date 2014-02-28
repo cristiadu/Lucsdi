@@ -64,7 +64,7 @@ exports.createMeetup = function(req, res){
 			"phone":req.param("phone"),
 			"people":[],
 			"active": "",
-			"created by": req.session.user.username
+			"createdBy": req.session.user.username
 			
 		});
 

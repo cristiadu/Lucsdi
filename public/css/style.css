@@ -18,6 +18,7 @@ body { top: 0px !important; }
 
 .h-img{
   margin-top: 20px;
+  max-height:30%;
 
 }
 
@@ -35,6 +36,7 @@ body { top: 0px !important; }
 	background:url("../img/theshores.jpg");
 	background-size: cover;
 	text-align: center;
+  height:30%;
 	 margin-top: 51px;
   padding-left:2%;
 }
