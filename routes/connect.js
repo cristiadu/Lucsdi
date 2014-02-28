@@ -23,6 +23,13 @@ exports.meetup = function(req, res){
     	res.render('index');
 };
 
+exports.meetupTest = function(req, res){
+	if(req.session.logged == true)
+  		res.render('meetupTest',{"meetups": meetup});
+  	else
+    	res.render('index');
+};
+
 exports.clubsOrg = function(req, res){
 	if(req.session.logged == true)
   		res.render('clubsOrg');

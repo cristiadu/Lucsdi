@@ -58,6 +58,7 @@ app.get('/logout', index.logout);
 app.get('/connect', connect.view);
 app.get('/connectTest', connect.viewTest);
 app.get('/meetup', connect.meetup);
+app.get('/meetupTest', connect.meetupTest);
 app.post('/newmeetup', connect.createMeetup);
 app.get('/joinmeetup', connect.joinmeetup);
 app.post('/confirmJoin', connect.addToMeetup);
