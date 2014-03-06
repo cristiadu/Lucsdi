@@ -40,10 +40,13 @@ $(document).ready(function(){
 
 	$("#btn-meetup").click(function(){
 		event.preventDefault();
-		if(meetup.test == true)
-			$(location).attr('href', "meetupTest");
-		else
-			$(location).attr('href', "meetup");
+		$(location).attr('href', "meetup");
+		ga("send", "event", "button", "click");
+	});
+
+	$("#status-connect").click(function(){
+		ga("send", "event", "status", "click");
+		
 	});
 
 	$("#btn-about").click(function(){
