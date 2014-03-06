@@ -17,15 +17,19 @@ exports.viewTest = function(req, res){
 };
 
 exports.meetup = function(req, res){
-	if(req.session.logged == true)
+	if(req.session.logged == true) {
+		meetup.test = false;
   		res.render('meetup',{"meetups": meetup});
+  	}
   	else
     	res.render('index');
 };
 
 exports.meetupTest = function(req, res){
-	if(req.session.logged == true)
+	if(req.session.logged == true) {
+		meetup.test = true; 
   		res.render('meetupTest',{"meetups": meetup});
+  	}
   	else
     	res.render('index');
 };

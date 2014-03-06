@@ -40,7 +40,10 @@ $(document).ready(function(){
 
 	$("#btn-meetup").click(function(){
 		event.preventDefault();
-		$(location).attr('href', "meetup");
+		if(meetup.test == true)
+			$(location).attr('href', "meetupTest");
+		else
+			$(location).attr('href', "meetup");
 	});
 
 	$("#btn-about").click(function(){
