@@ -45,7 +45,7 @@ $(document).ready(function(){
 	});
 
 	$("#status-connect").click(function(){
-		ga("send", "event", "bar", "click");
+		ga('send', 'event', 'bar', 'click');
 		
 	});
 
@@ -117,8 +117,9 @@ $(document).ready(function(){
 
 	$("#btn-joinMeetup").click(function(){
 		event.preventDefault();
+		ga('send', 'event', 'button', 'click');
 		$(location).attr('href',"joinmeetup");
-		ga("send", "event", "button", "click");
+		
 	});	
 
 	$("#search-dict").click(function(){
