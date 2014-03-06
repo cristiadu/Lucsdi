@@ -45,7 +45,7 @@ $(document).ready(function(){
 	});
 
 	$("#status-connect").click(function(){
-		ga("send", "event", "status", "click");
+		ga("send", "event", "bar", "click");
 		
 	});
 
