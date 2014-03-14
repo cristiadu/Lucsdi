@@ -101,7 +101,17 @@ exports.addToMeetup = function(req, res){
 		
 		if(id == meetup.meetup[v].id)
 		{
-			meetup.meetup[v].people.push(req.session.user);
+			var alreadyIn = false;
+			for(var x in meetup.meetup[v].people)
+			{
+				if(x.username == req.session.user.username)
+					alreadyIn = true;
+
+				break;
+			}
+
+			if(!alreadyIn)
+				meetup.meetup[v].people.push(req.session.user);
 
 			result = meetup.meetup[v];
 
