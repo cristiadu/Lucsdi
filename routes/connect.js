@@ -76,7 +76,7 @@ exports.createMeetup = function(req, res){
 			"title":req.param("title"),
 			"host":req.param("host"),
 			"location":req.param("local"),
-			"image":"http://lorempixel.com/579/380/"//req.param("image"),
+			"image":"http://lorempixel.com/579/380/",//req.param("image"),
 			"date":req.param("date"),
 			"email":req.param("email"),
 			"phone":req.param("phone"),

@@ -130,7 +130,7 @@ exports.createUser = function(req, res){
 		"lastname":req.param("lastname"),
 		"bio":req.param("bio"),
 		"languages":req.param("languages"),
-    "photo":"http://lorempixel.com/579/380/"//req.param("photo"),
+    "photo":"http://lorempixel.com/579/380/",//req.param("photo"),
     "email":req.param("email"),
 		"home":req.param("home"),
 		"classes":classes,
