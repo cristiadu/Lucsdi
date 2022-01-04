@@ -1,6 +1,3 @@
-/*
- * GET home page.
- */
 var meetups = require('../public/json/meetups.json');
 exports.view = function (req, res) {
 	if (req.session.logged == true)
@@ -64,13 +61,13 @@ exports.createMeetup = function (req, res) {
 	if (req.session.logged == true) {
 		meetups.push({
 			"id": meetups.length + 1,
-			"title": req.params.title,
-			"host": req.params.host,
-			"location": req.params.local,
-			"image": "http://lorempixel.com/579/380/",//req.params.image,
-			"date": req.params.date,
-			"email": req.params.email,
-			"phone": req.params.phone,
+			"title": req.body.title,
+			"host": req.body.host,
+			"location": req.body.local,
+			"image": "http://lorempixel.com/579/380/",//req.body.image,
+			"date": req.body.date,
+			"email": req.body.email,
+			"phone": req.body.phone,
 			"people": [],
 			"active": "",
 			"createdBy": req.session.user.username
@@ -85,7 +82,7 @@ exports.createMeetup = function (req, res) {
 };
 
 exports.addToMeetup = function (req, res) {
-	var id = req.params.id;
+	var id = req.body.id;
 	var result = null;
 
 	for (var v in meetups) {
@@ -100,7 +97,7 @@ exports.addToMeetup = function (req, res) {
 			}
 
 			if (!alreadyIn)
-			meetups[v].people.push(req.session.user);
+				meetups[v].people.push(req.session.user);
 
 			result = meetups[v];
 
@@ -110,4 +107,3 @@ exports.addToMeetup = function (req, res) {
 
 	res.json(result);
 };
-

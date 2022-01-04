@@ -25,10 +25,10 @@ app.set('view engine', 'handlebars');
 app.set('views', './public/views');
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride());
 app.use(cookieParser());
-app.use(session({secret: 'this is the secret', resave: false, saveUninitialized: false }));  
+app.use(session({ secret: 'this is the secret', resave: false, saveUninitialized: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -43,7 +43,7 @@ app.get('/menu', index.menu);
 app.get('/about', index.about);
 app.get('/help', index.help);
 app.get('/myProfile', index.myProfile);
-app.get('/profile/:user',index.viewProfile)
+app.get('/profile/:user', index.viewProfile)
 app.get('/mymeetups', index.mymeetups);
 app.get('/signup', index.signup);
 app.post('/confirmSignUp', index.createUser);
@@ -70,6 +70,6 @@ app.get('/plan', plan.view);
 app.get('/translate', translate.view);
 app.get('/searchDict/:word', translate.searchDict);
 
-app.listen(app.get('port'), function() {
+app.listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });

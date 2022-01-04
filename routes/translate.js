@@ -1,6 +1,3 @@
-/*
- * GET home page.
- */
 var dictionary = require('../public/json/dictionary.json');
 
 exports.view = function (req, res) {
