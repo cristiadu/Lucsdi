@@ -1,9 +1,13 @@
-
 /**
  * Module dependencies.
  */
-
 var express = require('express');
+var session = require('express-session')
+var bodyParser = require('body-parser')
+var methodOverride = require('method-override')
+var cookieParser = require('cookie-parser')
+var errorHandler = require('errorhandler')
+var logger = require('morgan')
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
@@ -13,9 +17,6 @@ var connect = require('./routes/connect');
 var navigate = require('./routes/navigate');
 var translate = require('./routes/translate');
 var plan = require('./routes/plan');
-// Example route
-// var user = require('./routes/user');
-
 var app = express();
 
 // all environments
@@ -23,23 +24,19 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.cookieParser());
-app.use(express.session({secret: 'this is the secret'}));  
-app.use(app.router);
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(methodOverride());
+app.use(cookieParser());
+app.use(session({secret: 'this is the secret', resave: false, saveUninitialized: false }));  
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
-
-// Add routes here
 
 // General routes
 app.get('/', index.view);
@@ -64,12 +61,7 @@ app.get('/joinmeetup', connect.joinmeetup);
 app.post('/confirmJoin', connect.addToMeetup);
 app.get('/clubsOrg', connect.clubsOrg);
 app.get('/tutorAdvisor', connect.tutorAdvisor);
-
-//app.get('/confirmation-advisor', connect.confirmation-advisor);
-
 app.get('/confirmationAdvisor', connect.confirmationAdvisor);
-
-// app.get('/confirmation-tutor', connect.confirm);
 
 // Navigate and Plan routes
 app.get('/navigate', navigate.view);
@@ -78,9 +70,6 @@ app.get('/plan', plan.view);
 // Translate routes
 app.get('/translate', translate.view);
 app.get('/searchDict/:word', translate.searchDict);
-
-// Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
