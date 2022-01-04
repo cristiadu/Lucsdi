@@ -1,7 +1,7 @@
 /*
  * GET home page.
  */
-var meetup = require('../public/json/meetups.json');
+var meetups = require('../public/json/meetups.json');
 exports.view = function (req, res) {
 	if (req.session.logged == true)
 		res.render('connect', { layout: false });
@@ -18,8 +18,7 @@ exports.viewTest = function (req, res) {
 
 exports.meetupPage = function (req, res) {
 	if (req.session.logged == true) {
-		meetup.test = false;
-		res.render('meetup', { meetups: meetup, layout: false });
+		res.render('meetup', { meetups, layout: false });
 	}
 	else
 		res.render('index', { layout: false });
@@ -27,8 +26,7 @@ exports.meetupPage = function (req, res) {
 
 exports.meetupTest = function (req, res) {
 	if (req.session.logged == true) {
-		meetup.test = true;
-		res.render('meetupTest', { meetups: meetup, layout: false });
+		res.render('meetupTest', { meetups, layout: false });
 	}
 	else
 		res.render('index', { layout: false });
@@ -57,15 +55,15 @@ exports.confirmationAdvisor = function (req, res) {
 
 exports.joinmeetup = function (req, res) {
 	if (req.session.logged == true)
-		res.render('joinmeetup', { meetup, layout: false });
+		res.render('joinmeetup', { meetups, layout: false });
 	else
 		res.render('index', { layout: false });
 };
 
 exports.createMeetup = function (req, res) {
 	if (req.session.logged == true) {
-		meetup.meetup.push({
-			"id": meetup.meetup.length + 1,
+		meetups.push({
+			"id": meetups.length + 1,
 			"title": req.params.title,
 			"host": req.params.host,
 			"location": req.params.local,
@@ -80,7 +78,7 @@ exports.createMeetup = function (req, res) {
 		});
 
 
-		res.render('meetup', { created: "true", meetups: meetup, layout: false });
+		res.render('meetup', { created: "true", meetups, layout: false });
 	}
 	else
 		res.render('index', { layout: false });
@@ -90,21 +88,21 @@ exports.addToMeetup = function (req, res) {
 	var id = req.params.id;
 	var result = null;
 
-	for (var v in meetup.meetup) {
+	for (var v in meetups) {
 
-		if (id == meetup.meetup[v].id) {
+		if (id == meetups[v].id) {
 			var alreadyIn = false;
-			for (var x in meetup.meetup[v].people) {
-				if (meetup.meetup[v].people[x].username == req.session.user.username)
+			for (var x in meetups[v].people) {
+				if (meetups[v].people[x].username == req.session.user.username)
 					alreadyIn = true;
 
 				break;
 			}
 
 			if (!alreadyIn)
-				meetup.meetup[v].people.push(req.session.user);
+			meetups[v].people.push(req.session.user);
 
-			result = meetup.meetup[v];
+			result = meetups[v];
 
 			break;
 		}

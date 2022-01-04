@@ -44,11 +44,6 @@ $(document).ready(function(){
 		
 	});
 
-	// $("#connect-test").click(function(){
-	// 	ga('send', 'event', 'header', 'click');
-		
-	// });
-
 	$("#status-connect").click(function(){
 	ga('send', 'event', 'bar', 'click');
 		
@@ -127,14 +122,6 @@ $(document).ready(function(){
 		$(location).attr('href',"joinmeetup");
 		
 	});	
-
-	// $("#btn-joinMeetupTest").click(function(){
-	// 	event.preventDefault();
-	// 	ga('send', 'event', 'meetuptest', 'click');
-	// 	$(location).attr('href',"joinmeetup");
-		
-	// });	
-
 
 	$("#search-dict").click(function(){
 		event.preventDefault();
