@@ -8,9 +8,8 @@ var methodOverride = require('method-override')
 var cookieParser = require('cookie-parser')
 var errorHandler = require('errorhandler')
 var logger = require('morgan')
-var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express-handlebars')
 
 var index = require('./routes/index');
 var connect = require('./routes/connect');
@@ -21,9 +20,9 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
+app.set('views', './public/views');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -54,7 +53,7 @@ app.get('/logout', index.logout);
 // Connect routes
 app.get('/connect', connect.view);
 app.get('/connectTest', connect.viewTest);
-app.get('/meetup', connect.meetup);
+app.get('/meetup', connect.meetupPage);
 app.get('/meetupTest', connect.meetupTest);
 app.post('/newmeetup', connect.createMeetup);
 app.get('/joinmeetup', connect.joinmeetup);
@@ -71,6 +70,6 @@ app.get('/plan', plan.view);
 app.get('/translate', translate.view);
 app.get('/searchDict/:word', translate.searchDict);
 
-http.createServer(app).listen(app.get('port'), function(){
+app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

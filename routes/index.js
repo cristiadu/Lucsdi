@@ -1,148 +1,139 @@
 /*
  * GET home page.
  */
-var users = require('../users.json');
-var meetups = require('../meetups.json');
-exports.view = function(req, res){
-  res.render('index');
+var users = require('../public/json/users.json');
+var meetups = require('../public/json/meetups.json');
+exports.view = function (req, res) {
+  res.render('index', { layout: false });
 };
 
-exports.viewProfile = function(req, res){
-if(req.session.logged == true){
-  for(var v in users){
+exports.viewProfile = function (req, res) {
+  if (req.session.logged == true) {
+    for (var v in users) {
 
       if (users[v].username == req.params.user) {
-          answer = users[v];
+        answer = users[v];
 
       }
+    }
+    res.render('profile', { answer, layout: false });
   }
-  res.render('profile',answer);
-}
-else
-  res.render('index');
-};
-
-exports.login = function(req, res){
-  	var answer = null;
-
-	for(var v in users){
-
-	    if (users[v].username == req.param("username") && users[v].password == req.param("password")) {
-	        answer = users[v];
-          req.session.logged = true;
-          req.session.user = users[v];
-
-	    }
-	}
-  	res.json(answer);
-};
-
-exports.menu = function(req, res){
-  if(req.session.logged == true)
-    res.render('menu');
   else
-    res.render('index');
+    res.render('index', { layout: false });
 };
 
-exports.about = function(req, res){
-  res.render('about');
+exports.login = function (req, res) {
+  var answer = null;
+
+  for (var v in users) {
+
+    if (users[v].username === req.params.username && users[v].password === req.params.password) {
+      answer = users[v];
+      req.session.logged = true;
+      req.session.user = users[v];
+
+    }
+  }
+  res.json(answer);
 };
 
-exports.help = function(req, res){
-  res.render('help');
-};
-
-exports.myProfile = function(req, res){
-
-  console.log(req.session.user);
-  if(req.session.logged == true)
-    res.render('myProfile',req.session.user);
+exports.menu = function (req, res) {
+  if (req.session.logged == true)
+    res.render('menu', { layout: false });
   else
-    res.render('index');
+    res.render('index', { layout: false });
 };
 
-exports.mymeetups = function(req, res){
+exports.about = function (req, res) {
+  res.render('about', { layout: false });
+};
+
+exports.help = function (req, res) {
+  res.render('help', { layout: false });
+};
+
+exports.myProfile = function (req, res) {
+  if (req.session.logged == true)
+    res.render('myProfile', { "req.session.user": req.session.user, layout: false });
+  else
+    res.render('index', { layout: false });
+};
+
+exports.mymeetups = function (req, res) {
 
   console.log(req.session.user);
 
-  if(req.session.logged == true)
-  {
+  if (req.session.logged == true) {
     var myCreated = [];
     var myJoined = [];
 
-    for(var v in meetups.meetup)
-    {
-      if(req.session.user.username == meetups.meetup[v].createdBy)
-         myCreated.push(meetups.meetup[v]);
-      else
-      {
-        for(var x in meetups.meetup[v].people)
-        {
-          
-          if(req.session.user.username == meetups.meetup[v].people[x].username)
+    for (var v in meetups.meetup) {
+      if (req.session.user.username == meetups.meetup[v].createdBy)
+        myCreated.push(meetups.meetup[v]);
+      else {
+        for (var x in meetups.meetup[v].people) {
+
+          if (req.session.user.username == meetups.meetup[v].people[x].username)
             myJoined.push(meetups.meetup[v]);
         }
       }
     }
-    
-    if(myCreated.length > 0 && myJoined.length>0)
-      res.render('mymeetups',{"myCreated":myCreated,"myJoined":myJoined});
-    else if(myCreated.length>0)
-      res.render('mymeetups',{"myCreated":myCreated});
-    else if(myJoined.length>0)
-      res.render('mymeetups',{"myJoined":myJoined});
+
+    if (myCreated.length > 0 && myJoined.length > 0)
+      res.render('mymeetups', { "myCreated": myCreated, "myJoined": myJoined, layout: false });
+    else if (myCreated.length > 0)
+      res.render('mymeetups', { "myCreated": myCreated, layout: false });
+    else if (myJoined.length > 0)
+      res.render('mymeetups', { "myJoined": myJoined, layout: false });
     else
-      res.render('mymeetups');
+      res.render('mymeetups', { layout: false });
 
   }
   else
-    res.render('index');
+    res.render('index', { layout: false });
 };
 
-exports.signup = function(req, res){
-  res.render('signup');
+exports.signup = function (req, res) {
+  res.render('signup', { layout: false });
 };
 
-exports.createUser = function(req, res){
-  
+exports.createUser = function (req, res) {
+
   var classes = [];
-  var clArray = req.param("classes").split("\n");
-  for(var x in clArray)
-  {
-  	classes.push({
-  		"name": clArray[x]
-  	})
+  var clArray = req.params.classes ? req.params.classes.split("\n") : [];
+  for (var x in clArray) {
+    classes.push({
+      "name": clArray[x]
+    })
   }
 
   var interests = [];
-  var intArray = req.param("interests").split("\n");
-  for(var x in intArray)
-  {
-  	interests.push({
-  		"name": intArray[x]
-  	})
+  var intArray = req.params.interests ? req.params.interests.split("\n") : [];
+  for (var x in intArray) {
+    interests.push({
+      "name": intArray[x]
+    })
   }
 
   users.push({
-  	"username":req.param("username"),
-		"password":req.param("password"),
-		"firstname":req.param("firstname"),
-		"lastname":req.param("lastname"),
-		"bio":req.param("bio"),
-		"languages":req.param("languages"),
-    "photo":"http://lorempixel.com/579/380/",//req.param("photo"),
-    "email":req.param("email"),
-		"home":req.param("home"),
-		"classes":classes,
-		"interests":interests
+    "username": req.params.username,
+    "password": req.params.password,
+    "firstname": req.params.firstname,
+    "lastname": req.params.lastname,
+    "bio": req.params.bio,
+    "languages": req.params.languages,
+    "photo": "http://lorempixel.com/579/380/",//req.params.photo,
+    "email": req.params.email,
+    "home": req.params.home,
+    "classes": classes,
+    "interests": interests
   });
-  console.log(users);
 
-  res.render('index',{"created":"true"});
+  res.render('index', { "created": "true", layout: false });
 };
 
-exports.logout = function(req, res){
+exports.logout = function (req, res) {
   req.session.logged = false;
   req.session.user = null;
-  res.render('logout');
+  res.render('logout', { layout: false });
 };
